@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p app/\\\\[pair\\\\]/\\\\[level\\\\]/\\\\[stage\\\\] components lib content/bn-de/a1 public)",
+      "Bash(mkdir -p app/\\\\[pair\\\\]/\\\\[level\\\\]/\\\\[stage\\\\] components lib content/bn-de/a1 public && ls -R)",
+      "Bash(npm install *)",
+      "Bash(npm show *)",
+      "Bash(node -e \"const v=JSON.parse\\(require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\)\\); console.log\\(v.filter\\(x=>x.startsWith\\('15.'\\)\\).slice\\(-5\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(npm audit *)",
+      "Bash(npm run *)",
+      "Bash(chmod +x /Users/s.paik/Workspaces/rnd/lexora/run.sh)",
+      "Bash(npx next *)",
+      "Bash(./node_modules/.bin/next build *)"
+    ],
+    "additionalDirectories": [
+      "/Users/s.paik/Workspaces/rnd/lexora/app/[pair]/[level]",
+      "/Users/s.paik/Workspaces/rnd/lexora/app/[pair]/[level]/[stage]"
+    ]
+  }
+}

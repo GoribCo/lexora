@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* Use class-based dark mode (.dark on <html>) instead of media query */
+@variant dark (&:is(.dark *));
+
+@layer base {
+  :root {
+    --color-primary-50: #eef2ff;
+    --color-primary-100: #e0e7ff;
+    --color-primary-200: #c7d2fe;
+    --color-primary-500: #6366f1;
+    --color-primary-600: #4f46e5;
+    --color-primary-700: #4338ca;
+
+    --bg-body: #f9fafb;
+    --bg-card: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+
+  html.dark {
+    --bg-body: #0f172a;
+    --bg-card: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  body {
+    min-height: 100dvh;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Prose styles for markdown content */
+  .prose h2 {
+    @apply text-xl font-bold mt-8 mb-3 text-gray-900 dark:text-white;
+  }
+
+  .prose h3 {
+    @apply text-lg font-semibold mt-6 mb-2 text-gray-800 dark:text-gray-100;
+  }
+
+  .prose p {
+    @apply text-gray-700 dark:text-gray-300 leading-relaxed mb-4;
+  }
+
+  .prose ul {
+    @apply list-disc list-inside space-y-1 mb-4 text-gray-700 dark:text-gray-300;
+  }
+
+  .prose ol {
+    @apply list-decimal list-inside space-y-1 mb-4 text-gray-700 dark:text-gray-300;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-indigo-400 pl-4 py-2 my-4 bg-indigo-50 dark:bg-indigo-950 rounded-r-lg text-gray-700 dark:text-gray-300 italic;
+  }
+
+  .prose strong {
+    @apply font-semibold text-gray-900 dark:text-white;
+  }
+
+  .prose code {
+    @apply bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono text-indigo-600 dark:text-indigo-400;
+  }
+
+  .prose table {
+    @apply w-full border-collapse text-sm mb-6 rounded-xl overflow-hidden;
+  }
+
+  .prose thead tr {
+    @apply bg-indigo-50 dark:bg-indigo-950;
+  }
+
+  .prose thead th {
+    @apply px-4 py-3 text-left font-semibold text-indigo-700 dark:text-indigo-300 border-b border-indigo-200 dark:border-indigo-800;
+  }
+
+  .prose tbody tr {
+    @apply border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors;
+  }
+
+  .prose tbody td {
+    @apply px-4 py-3 text-gray-700 dark:text-gray-300;
+  }
+
+  .prose hr {
+    @apply border-gray-200 dark:border-gray-700 my-6;
+  }
+}
