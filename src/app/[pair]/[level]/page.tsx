@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getLanguagePairs, getLevels, getStages } from '@/lib/content'
 import ThemeToggle from '@/components/ThemeToggle'
+import StageCheckBadge from '@/components/StageCheckBadge'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
@@ -214,6 +215,7 @@ export default async function LevelPage({
                       Start here
                     </span>
                   )}
+                  <StageCheckBadge pair={pair} level={level} stageNum={stage.number} />
                 </div>
               </div>
             </div>

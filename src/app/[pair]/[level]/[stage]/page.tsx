@@ -3,6 +3,12 @@ import { notFound } from 'next/navigation'
 import { getLanguagePairs, getLevels, getStages, getStage } from '@/lib/content'
 import ThemeToggle from '@/components/ThemeToggle'
 import StageContent from './StageContent'
+import MarkComplete from '@/components/MarkComplete'
+import LevelProgressBar from '@/components/LevelProgressBar'
+import FlashcardDeck from '@/components/FlashcardDeck'
+import StreakBadge from '@/components/StreakBadge'
+import { parseFlashcardsFromMarkdown } from '@/lib/flashcards'
+import { getLangCode } from '@/lib/languages'
 import type { Metadata } from 'next'
 
 export const dynamic = 'force-static'
@@ -73,10 +79,14 @@ export default async function StagePage({
 
   const colors = levelColorMap[level] ?? levelColorMap.a1
 
+  // Parse flashcards from stage content at build time
+  const flashcards = parseFlashcardsFromMarkdown(stageData.content)
+  const langCode = getLangCode(pair)
+
   return (
     <div className="max-w-md mx-auto px-4 pb-28 pt-6">
       {/* Header */}
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-4">
         <Link
           href={`/${pair}/${level}`}
           className="flex items-center gap-1.5 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
@@ -88,8 +98,19 @@ export default async function StagePage({
             {levelData?.fullName ?? level.toUpperCase()}
           </span>
         </Link>
-        <ThemeToggle />
+        <div className="flex items-center gap-2">
+          <StreakBadge />
+          <ThemeToggle />
+        </div>
       </div>
+
+      {/* Level progress bar */}
+      <LevelProgressBar
+        pair={pair}
+        level={level}
+        totalStages={allStages.length}
+        currentStage={currentIndex + 1}
+      />
 
       {/* Stage header */}
       <div className="mb-6">
@@ -137,6 +158,14 @@ export default async function StagePage({
 
       {/* Markdown content */}
       <StageContent content={stageData.content} />
+
+      {/* Flashcard deck */}
+      {flashcards.length > 0 && (
+        <FlashcardDeck cards={flashcards} langCode={langCode} />
+      )}
+
+      {/* Mark complete */}
+      <MarkComplete pair={pair} level={level} stageNum={stageNumber} />
 
       {/* Bottom navigation */}
       <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-800">

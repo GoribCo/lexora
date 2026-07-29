@@ -24,6 +24,15 @@ const navItems = [
     ),
   },
   {
+    label: 'Review',
+    href: '/review',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+      </svg>
+    ),
+  },
+  {
     label: 'Settings',
     href: '/settings',
     icon: (
@@ -41,6 +50,7 @@ export default function BottomNav() {
   function isActive(href: string) {
     if (href === '/') return pathname === '/'
     if (href === '/settings') return pathname.startsWith('/settings')
+    if (href === '/review') return pathname.startsWith('/review')
     if (href === '/courses') {
       // Active on /courses or any pair/level/stage page
       return pathname.startsWith('/courses') || /^\/[a-z]{2}-[a-z]{2}/.test(pathname)
@@ -57,7 +67,7 @@ export default function BottomNav() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex flex-col items-center gap-0.5 py-2 px-5 min-w-[64px] transition-colors ${
+              className={`flex flex-col items-center gap-0.5 py-2 px-4 min-w-[56px] transition-colors ${
                 active
                   ? 'text-indigo-600 dark:text-indigo-400'
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200'

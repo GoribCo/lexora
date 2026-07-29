@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import ThemeToggle from '@/components/ThemeToggle'
+import StreakBadge from '@/components/StreakBadge'
 import type { Language, LanguagePair } from '@/lib/types'
 
 interface Props {
@@ -55,18 +56,30 @@ export default function HomeClient({ languages, pairs }: Props) {
           </div>
           <span className="text-xl font-bold text-gray-900 dark:text-white">Lexora</span>
         </div>
-        <ThemeToggle />
+        <div className="flex items-center gap-1">
+          <Link
+            href="/search"
+            aria-label="Search lessons"
+            className="p-2 rounded-xl text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+            </svg>
+          </Link>
+          <ThemeToggle />
+        </div>
       </div>
 
       {/* Hero */}
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white leading-tight mb-2">
           Start Learning <br />
           <span className="text-indigo-600 dark:text-indigo-400">Today</span>
         </h1>
-        <p className="text-gray-500 dark:text-gray-400">
+        <p className="text-gray-500 dark:text-gray-400 mb-3">
           Structured CEFR-based lessons. Go from A1 to C2 at your own pace.
         </p>
+        <StreakBadge />
       </div>
 
       {/* Language Selector Card */}

@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import ThemeProvider from '@/components/ThemeProvider'
 import BottomNav from '@/components/BottomNav'
+import ServiceWorkerRegistrar from '@/components/ServiceWorkerRegistrar'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -40,8 +41,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      </head>
       <body className={`${inter.variable} font-sans antialiased bg-gray-50 dark:bg-slate-900 min-h-dvh`}>
         <ThemeProvider>
+          <ServiceWorkerRegistrar />
           <main className="min-h-dvh">
             {children}
           </main>
