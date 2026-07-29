@@ -49,10 +49,17 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans antialiased bg-gray-50 dark:bg-slate-900 min-h-dvh`}>
         <ThemeProvider>
           <ServiceWorkerRegistrar />
-          <main className="min-h-dvh">
-            {children}
-          </main>
-          <BottomNav />
+          {/*
+            max-w-6xl caps the whole layout (sidebar + content) at 1152px.
+            On desktop: flex row — sticky sidebar on the left, content fills the rest.
+            On mobile: sidebar is hidden, bottom nav is fixed.
+          */}
+          <div className="max-w-6xl mx-auto min-h-dvh lg:flex lg:items-start">
+            <BottomNav />
+            <main className="flex-1 min-w-0 min-h-dvh">
+              {children}
+            </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -74,7 +74,7 @@ export default async function PairPage({
   const availableLevels = ['a1']
 
   return (
-    <div className="max-w-md mx-auto px-4 pb-28 pt-6">
+    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <Link
@@ -116,7 +116,7 @@ export default async function PairPage({
         Choose Your Level
       </h2>
 
-      <div className="flex flex-col gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {levels.map(level => {
           const colors = levelColorMap[level.code] ?? levelColorMap.a1
           const available = availableLevels.includes(level.code)

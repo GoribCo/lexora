@@ -25,7 +25,7 @@ export default function CoursesPage() {
   })
 
   return (
-    <div className="max-w-md mx-auto px-4 pb-28 pt-6">
+    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">All Courses</h1>
         <div className="flex items-center gap-1">
@@ -42,7 +42,7 @@ export default function CoursesPage() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {pairs.map(pair => {
           const stageCount = pairStageCounts.find(p => p.slug === pair.slug)?.total ?? 0
           return (

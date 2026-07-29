@@ -15,7 +15,7 @@ export default function ReviewPage() {
   const defaultPair = pairs[0]
 
   return (
-    <div className="max-w-md mx-auto px-4 pb-28 pt-6">
+    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Review</h1>

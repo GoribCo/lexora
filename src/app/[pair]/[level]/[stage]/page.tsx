@@ -7,6 +7,7 @@ import MarkComplete from '@/components/MarkComplete'
 import LevelProgressBar from '@/components/LevelProgressBar'
 import FlashcardDeck from '@/components/FlashcardDeck'
 import StreakBadge from '@/components/StreakBadge'
+import TableOfContents from '@/components/TableOfContents'
 import { parseFlashcardsFromMarkdown } from '@/lib/flashcards'
 import { getLangCode } from '@/lib/languages'
 import type { Metadata } from 'next'
@@ -84,7 +85,7 @@ export default async function StagePage({
   const langCode = getLangCode(pair)
 
   return (
-    <div className="max-w-md mx-auto px-4 pb-28 pt-6">
+    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <Link
@@ -156,16 +157,24 @@ export default async function StagePage({
       {/* Divider */}
       <div className="h-px bg-gray-100 dark:bg-gray-800 mb-6" />
 
-      {/* Markdown content */}
-      <StageContent content={stageData.content} />
+      {/* Content + TOC sidebar (TOC only visible on xl+) */}
+      <div className="xl:flex xl:gap-10 xl:items-start">
+        <div className="flex-1 min-w-0">
+          {/* Markdown content */}
+          <StageContent content={stageData.content} />
 
-      {/* Flashcard deck */}
-      {flashcards.length > 0 && (
-        <FlashcardDeck cards={flashcards} langCode={langCode} />
-      )}
+          {/* Flashcard deck */}
+          {flashcards.length > 0 && (
+            <FlashcardDeck cards={flashcards} langCode={langCode} />
+          )}
 
-      {/* Mark complete */}
-      <MarkComplete pair={pair} level={level} stageNum={stageNumber} />
+          {/* Mark complete */}
+          <MarkComplete pair={pair} level={level} stageNum={stageNumber} />
+        </div>
+
+        {/* TOC — sticky sidebar, only xl+ */}
+        <TableOfContents content={stageData.content} />
+      </div>
 
       {/* Bottom navigation */}
       <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-800">
