@@ -23,18 +23,28 @@ export async function generateStaticParams() {
   return params
 }
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lexora.app'
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ pair: string; level: string }>
 }): Promise<Metadata> {
   const { pair, level } = await params
+  const pairs = getLanguagePairs()
   const levels = getLevels()
+  const pairData = pairs.find(p => p.slug === pair)
   const levelData = levels.find(l => l.code === level)
-  if (!levelData) return {}
+  if (!levelData || !pairData) return {}
+  const title = `${levelData.fullName} ${pairData.to.name} Lessons`
+  const description = `${levelData.description} Learn ${pairData.to.name} from ${pairData.from.name} with ${levelData.vocabulary} vocabulary and guided stages.`
+  const url = `${BASE_URL}/${pair}/${level}`
   return {
-    title: `${levelData.fullName} – ${pair.toUpperCase()}`,
-    description: `${levelData.description} Learn step by step.`,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, type: 'website' },
+    twitter: { card: 'summary', title, description },
   }
 }
 

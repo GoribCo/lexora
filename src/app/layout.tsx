@@ -11,17 +11,38 @@ const inter = Inter({
   display: 'swap',
 })
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lexora.app'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     default: 'Lexora – Language Learning',
     template: '%s | Lexora',
   },
-  description: 'Learn languages step by step with Lexora. Structured CEFR-based lessons from Bengali to German and more.',
-  keywords: ['language learning', 'German', 'Bengali', 'CEFR', 'lessons'],
+  description: 'Learn German and Polish from Bengali with structured CEFR lessons. Step-by-step stages from A1 to C2 with vocabulary, flashcards, and spaced repetition.',
+  keywords: ['language learning', 'German', 'Polish', 'Bengali', 'CEFR', 'A1 B1 C2', 'flashcards', 'vocabulary'],
+  authors: [{ name: 'Lexora' }],
+  creator: 'Lexora',
   openGraph: {
     title: 'Lexora – Language Learning',
-    description: 'Structured language learning from Bengali to German.',
+    description: 'Learn German and Polish from Bengali. Structured CEFR lessons from A1 to C2.',
+    url: BASE_URL,
+    siteName: 'Lexora',
+    locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Lexora – Language Learning',
+    description: 'Learn German and Polish from Bengali. Structured CEFR lessons from A1 to C2.',
+  },
+  alternates: {
+    canonical: BASE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
   },
 }
 

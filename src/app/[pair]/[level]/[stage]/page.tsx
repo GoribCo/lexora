@@ -34,17 +34,29 @@ export async function generateStaticParams() {
   return params
 }
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lexora.app'
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ pair: string; level: string; stage: string }>
 }): Promise<Metadata> {
   const { pair, level, stage } = await params
+  const pairs = getLanguagePairs()
+  const levels = getLevels()
+  const pairData = pairs.find(p => p.slug === pair)
+  const levelData = levels.find(l => l.code === level)
   const stageData = getStage(pair, level, parseInt(stage, 10))
-  if (!stageData) return {}
+  if (!stageData || !pairData || !levelData) return {}
+  const title = `${stageData.title} – ${levelData.fullName} ${pairData.to.name}`
+  const description = `${stageData.description} Learn ${stageData.vocabulary} ${pairData.to.name} words in this ${stageData.duration} lesson.`
+  const url = `${BASE_URL}/${pair}/${level}/${stage}`
   return {
-    title: `Stage ${stageData.number}: ${stageData.title}`,
-    description: stageData.description,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, type: 'article' },
+    twitter: { card: 'summary', title, description },
   }
 }
 
@@ -85,6 +97,30 @@ export default async function StagePage({
   const langCode = getLangCode(pair)
 
   return (
+    <>
+      {/* JSON-LD structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LearningResource',
+            name: stageData.title,
+            description: stageData.description,
+            url: `${BASE_URL}/${pair}/${level}/${stageNumber}`,
+            educationalLevel: levelData?.fullName,
+            learningResourceType: 'Lesson',
+            timeRequired: `PT${stageData.duration.replace(' min', 'M')}`,
+            inLanguage: pair.split('-')[1],
+            teaches: stageData.title,
+            provider: {
+              '@type': 'Organization',
+              name: 'Lexora',
+              url: BASE_URL,
+            },
+          }),
+        }}
+      />
     <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl mx-auto lg:mx-0">
       <PageHeader
         backHref={`/${pair}/${level}`}
@@ -208,5 +244,6 @@ export default async function StagePage({
         </div>
       </div>
     </div>
+    </>
   )
 }
