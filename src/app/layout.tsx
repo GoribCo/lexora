@@ -4,6 +4,7 @@ import './globals.css'
 import ThemeProvider from '@/components/ThemeProvider'
 import BottomNav from '@/components/BottomNav'
 import ServiceWorkerRegistrar from '@/components/ServiceWorkerRegistrar'
+import config from '@/config'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,33 +12,31 @@ const inter = Inter({
   display: 'swap',
 })
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lexora.app'
-
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL(config.url.site),
   title: {
-    default: 'Lexora – Language Learning',
-    template: '%s | Lexora',
+    default: config.seo.defaultTitle,
+    template: config.seo.titleTemplate,
   },
-  description: 'Learn German and Polish from Bengali with structured CEFR lessons. Step-by-step stages from A1 to C2 with vocabulary, flashcards, and spaced repetition.',
-  keywords: ['language learning', 'German', 'Polish', 'Bengali', 'CEFR', 'A1 B1 C2', 'flashcards', 'vocabulary'],
-  authors: [{ name: 'Lexora' }],
-  creator: 'Lexora',
+  description: config.seo.defaultDescription,
+  keywords: [...config.seo.keywords],
+  authors: [{ name: config.app.name }],
+  creator: config.app.name,
   openGraph: {
-    title: 'Lexora – Language Learning',
-    description: 'Learn German and Polish from Bengali. Structured CEFR lessons from A1 to C2.',
-    url: BASE_URL,
-    siteName: 'Lexora',
+    title: config.seo.defaultTitle,
+    description: config.seo.defaultDescription,
+    url: config.url.site,
+    siteName: config.app.name,
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'Lexora – Language Learning',
-    description: 'Learn German and Polish from Bengali. Structured CEFR lessons from A1 to C2.',
+    title: config.seo.defaultTitle,
+    description: config.seo.defaultDescription,
   },
   alternates: {
-    canonical: BASE_URL,
+    canonical: config.url.site,
   },
   robots: {
     index: true,
@@ -50,8 +49,8 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f9fafb' },
-    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
+    { media: '(prefers-color-scheme: light)', color: config.theme.colorLight },
+    { media: '(prefers-color-scheme: dark)', color: config.theme.colorDark },
   ],
 }
 

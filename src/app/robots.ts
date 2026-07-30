@@ -1,8 +1,7 @@
 import type { MetadataRoute } from 'next'
+import { BASE_URL } from '@/lib/seo'
 
 export const dynamic = 'force-static'
-
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lexora.app'
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -1,9 +1,8 @@
 import type { MetadataRoute } from 'next'
+import { getLanguagePairs, getLevels, getStages } from '@/lib/content'
+import { BASE_URL } from '@/lib/seo'
 
 export const dynamic = 'force-static'
-import { getLanguagePairs, getLevels, getStages } from '@/lib/content'
-
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lexora.app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pairs = getLanguagePairs()

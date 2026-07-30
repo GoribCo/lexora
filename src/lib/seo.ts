@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
 import { getLanguagePairs, getLevels, getStage } from './content'
+import config from '@/config'
 
-export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lexora.app'
+const { site: BASE_URL } = config.url
+// Re-export so callers that only need the URL don't have to import config too
+export { BASE_URL }
 
-// Shared helper — builds the canonical+OG+Twitter block from title/description/url
+// Shared helper — builds canonical + OG + Twitter block from title/description/url
 function meta(
   title: string,
   description: string,
@@ -71,7 +74,7 @@ export function stageJsonLd(pair: string, level: string, stageNumber: number): o
     teaches: stageData.title,
     provider: {
       '@type': 'Organization',
-      name: 'Lexora',
+      name: config.app.name,
       url: BASE_URL,
     },
   }
