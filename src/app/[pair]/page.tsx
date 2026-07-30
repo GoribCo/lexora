@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getLanguagePairs, getLevels, getPairMeta } from '@/lib/content'
 import PageHeader from '@/components/PageHeader'
+import { getPairMeta as getPairSeoMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
@@ -11,27 +12,13 @@ export async function generateStaticParams() {
   return pairs.map(p => ({ pair: p.slug }))
 }
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lexora.app'
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ pair: string }>
 }): Promise<Metadata> {
   const { pair } = await params
-  const pairs = getLanguagePairs()
-  const pairData = pairs.find(p => p.slug === pair)
-  if (!pairData) return {}
-  const title = `Learn ${pairData.to.name} from ${pairData.from.name}`
-  const description = `Structured CEFR lessons to learn ${pairData.to.name} starting from ${pairData.from.name}. Choose your level from A1 Beginner to C2 Mastery.`
-  const url = `${BASE_URL}/${pair}`
-  return {
-    title,
-    description,
-    alternates: { canonical: url },
-    openGraph: { title, description, url, type: 'website' },
-    twitter: { card: 'summary', title, description },
-  }
+  return getPairSeoMeta(pair)
 }
 
 const levelColorMap: Record<string, { badge: string; ring: string; dot: string }> = {
