@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import ThemeToggle from '@/components/ThemeToggle'
+import { useUiLang } from '@/components/UiLanguageProvider'
 import type { SearchResult } from '@/lib/searchIndex'
 
 interface Props {
@@ -19,6 +20,7 @@ const levelBadge: Record<string, string> = {
 }
 
 export default function SearchClient({ index }: Props) {
+  const { t } = useUiLang()
   const [query, setQuery] = useState('')
 
   const q = query.trim().toLowerCase()
@@ -35,7 +37,7 @@ export default function SearchClient({ index }: Props) {
     <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl mx-auto lg:mx-0">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Search</h1>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t.search.title}</h1>
         <ThemeToggle />
       </div>
 
@@ -50,7 +52,7 @@ export default function SearchClient({ index }: Props) {
           type="search"
           value={query}
           onChange={e => setQuery(e.target.value)}
-          placeholder="Search lessons..."
+          placeholder={t.search.placeholder}
           autoFocus
           className="w-full pl-10 pr-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors text-base"
         />
@@ -72,14 +74,14 @@ export default function SearchClient({ index }: Props) {
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="mx-auto mb-3 opacity-40">
             <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
           </svg>
-          <p className="text-sm">Start typing to search lessons</p>
+          <p className="text-sm">{t.search.startTyping}</p>
         </div>
       ) : results.length === 0 ? (
         <div className="text-center py-12 text-gray-400 dark:text-gray-500">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="mx-auto mb-3 opacity-40">
             <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
           </svg>
-          <p className="text-sm">No lessons found for &lsquo;{query}&rsquo;</p>
+          <p className="text-sm">{t.search.noResults.replace('{{q}}', query)}</p>
         </div>
       ) : (
         <div className="space-y-3">

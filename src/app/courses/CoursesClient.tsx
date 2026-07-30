@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import StageCompletionBadge from '@/components/StageCompletionBadge'
+import { useUiLang } from '@/components/UiLanguageProvider'
 import type { LanguagePair } from '@/lib/types'
 
 interface PairWithCount extends LanguagePair {
@@ -14,6 +15,7 @@ interface Props {
 }
 
 export default function CoursesClient({ pairs }: Props) {
+  const { t } = useUiLang()
   const fromLangs = [...new Set(pairs.map(p => p.from.code))]
   const toLangs   = [...new Set(pairs.map(p => p.to.code))]
 
@@ -40,7 +42,7 @@ export default function CoursesClient({ pairs }: Props) {
       <div className="flex flex-col gap-3 mb-6">
         {/* From filter */}
         <div>
-          <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">I speak</p>
+          <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">{t.courses.iSpeak}</p>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setFromFilter('all')}
@@ -50,7 +52,7 @@ export default function CoursesClient({ pairs }: Props) {
                   : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-indigo-400 dark:hover:border-indigo-500'
               }`}
             >
-              All
+              {t.courses.all}
             </button>
             {fromOptions.map(lang => (
               <button
@@ -71,7 +73,7 @@ export default function CoursesClient({ pairs }: Props) {
 
         {/* To filter */}
         <div>
-          <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">I want to learn</p>
+          <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">{t.courses.iWantToLearn}</p>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setToFilter('all')}
@@ -81,7 +83,7 @@ export default function CoursesClient({ pairs }: Props) {
                   : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-indigo-400 dark:hover:border-indigo-500'
               }`}
             >
-              All
+              {t.courses.all}
             </button>
             {toOptions.map(lang => (
               <button
@@ -104,12 +106,12 @@ export default function CoursesClient({ pairs }: Props) {
       {/* Results count */}
       {(fromFilter !== 'all' || toFilter !== 'all') && (
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
-          {filtered.length} course{filtered.length !== 1 ? 's' : ''} found
+          {filtered.length === 1 ? t.courses.found.replace('{{n}}', '1') : t.courses.foundPlural.replace('{{n}}', String(filtered.length))}
           <button
             onClick={() => { setFromFilter('all'); setToFilter('all') }}
             className="ml-2 text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium"
           >
-            Clear
+            {t.courses.clear}
           </button>
         </p>
       )}
@@ -142,7 +144,7 @@ export default function CoursesClient({ pairs }: Props) {
                     <div className="flex items-center gap-2 mt-1">
                       {pair.totalLearners && (
                         <div className="text-xs text-indigo-500 dark:text-indigo-400 font-medium">
-                          {pair.totalLearners} learners
+                          {pair.totalLearners} {t.courses.learners}
                         </div>
                       )}
                       <StageCompletionBadge pair={pair.slug} level="a1" totalStages={pair.stageCount} />
@@ -159,13 +161,13 @@ export default function CoursesClient({ pairs }: Props) {
       ) : (
         <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-10 text-center">
           <p className="text-2xl mb-2">🔍</p>
-          <p className="text-gray-600 dark:text-gray-400 font-medium">No courses match this filter</p>
-          <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">Try selecting different languages</p>
+          <p className="text-gray-600 dark:text-gray-400 font-medium">{t.courses.noMatch}</p>
+          <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">{t.courses.noMatchHint}</p>
         </div>
       )}
 
       <div className="mt-4 bg-gray-50 dark:bg-gray-800/50 rounded-2xl border border-dashed border-gray-200 dark:border-gray-700 p-4 text-center">
-        <p className="text-sm text-gray-400 dark:text-gray-500">More language pairs coming soon</p>
+        <p className="text-sm text-gray-400 dark:text-gray-500">{t.courses.moreComing}</p>
       </div>
     </>
   )

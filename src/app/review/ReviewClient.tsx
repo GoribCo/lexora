@@ -5,6 +5,7 @@ import { getDueCards, updateCard, type DueCard } from '@/lib/srs'
 import { updateStreak } from '@/lib/progress'
 import SpeakButton from '@/components/SpeakButton'
 import { getLangCode } from '@/lib/languages'
+import { useUiLang } from '@/components/UiLanguageProvider'
 
 interface Props {
   pair: string
@@ -12,6 +13,7 @@ interface Props {
 }
 
 export default function ReviewClient({ pair, pairLabel }: Props) {
+  const { t } = useUiLang()
   const [cards, setCards] = useState<DueCard[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
@@ -27,17 +29,15 @@ export default function ReviewClient({ pair, pairLabel }: Props) {
   }, [pair])
 
   if (!loaded) {
-    return <div className="text-center py-12 text-gray-400 dark:text-gray-500 text-sm">Loading...</div>
+    return <div className="text-center py-12 text-gray-400 dark:text-gray-500 text-sm">{t.common.loading}</div>
   }
 
   if (cards.length === 0 || done) {
     return (
       <div className="text-center py-12">
         <div className="text-5xl mb-4">🎉</div>
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">All caught up!</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          No more cards due for {pairLabel}. Check back later!
-        </p>
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{t.review.allCaughtUp}</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">{t.review.allCaughtUpMsg}</p>
       </div>
     )
   }
@@ -118,21 +118,21 @@ export default function ReviewClient({ pair, pairLabel }: Props) {
             className="flex flex-col items-center gap-1 py-3 px-2 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 rounded-xl text-rose-700 dark:text-rose-400 hover:bg-rose-100 dark:hover:bg-rose-950/60 transition-colors text-sm font-medium"
           >
             <span>😓</span>
-            Hard
+            {t.review.hard}
           </button>
           <button
             onClick={() => handleScore(2)}
             className="flex flex-col items-center gap-1 py-3 px-2 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 rounded-xl text-blue-700 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-950/60 transition-colors text-sm font-medium"
           >
             <span>👍</span>
-            Good
+            {t.review.good}
           </button>
           <button
             onClick={() => handleScore(3)}
             className="flex flex-col items-center gap-1 py-3 px-2 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl text-emerald-700 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-950/60 transition-colors text-sm font-medium"
           >
             <span>🎉</span>
-            Easy
+            {t.review.easy}
           </button>
         </div>
       )}

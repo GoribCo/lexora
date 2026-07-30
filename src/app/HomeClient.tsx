@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import ThemeToggle from '@/components/ThemeToggle'
 import StreakBadge from '@/components/StreakBadge'
+import { useUiLang } from '@/components/UiLanguageProvider'
 import type { Language, LanguagePair } from '@/lib/types'
 
 interface Props {
@@ -14,6 +15,7 @@ interface Props {
 
 export default function HomeClient({ languages, pairs }: Props) {
   const router = useRouter()
+  const { t } = useUiLang()
   const [fromLang, setFromLang] = useState('bn')
   const [toLang, setToLang] = useState('de')
 
@@ -23,7 +25,7 @@ export default function HomeClient({ languages, pairs }: Props) {
     if (pairExists) {
       router.push(`/${slug}`)
     } else {
-      alert(`The pair "${fromLang.toUpperCase()} → ${toLang.toUpperCase()}" is not yet available. Try Bengali → German!`)
+      alert(`${fromLang.toUpperCase()} → ${toLang.toUpperCase()} ${t.home.pairNotAvailable}`)
     }
   }
 
@@ -58,7 +60,7 @@ export default function HomeClient({ languages, pairs }: Props) {
         </div>
         {/* Desktop: page title instead of logo */}
         <h1 className="hidden lg:block text-2xl font-bold text-gray-900 dark:text-white">
-          Welcome back 👋
+          {t.home.welcome}
         </h1>
         <div className="flex items-center gap-1">
           <Link
@@ -82,14 +84,14 @@ export default function HomeClient({ languages, pairs }: Props) {
           {/* Hero */}
           <div className="mb-6">
             <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white leading-tight mb-2 lg:hidden">
-              Start Learning <br />
+              {t.home.startLearning} <br />
               <span className="text-indigo-600 dark:text-indigo-400">Today</span>
             </h2>
             <p className="hidden lg:block text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">
-              Start Learning Today
+              {t.home.startLearning}
             </p>
             <p className="text-gray-500 dark:text-gray-400 mb-3">
-              Structured CEFR-based lessons. Go from A1 to C2 at your own pace.
+              {t.home.tagline}
             </p>
             <StreakBadge />
           </div>
@@ -97,14 +99,14 @@ export default function HomeClient({ languages, pairs }: Props) {
           {/* Language Selector Card */}
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-5 mb-6">
             <h2 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-4">
-              Choose Your Path
+              {t.home.chooseYourPath}
             </h2>
 
             <div className="space-y-4 mb-5">
               {/* From language */}
               <div>
                 <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1.5">
-                  I speak
+                  {t.home.iSpeak}
                 </label>
                 <div className="relative">
                   <div className="absolute left-3 top-1/2 -translate-y-1/2 text-lg pointer-events-none">
@@ -143,7 +145,7 @@ export default function HomeClient({ languages, pairs }: Props) {
               {/* To language */}
               <div>
                 <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1.5">
-                  I want to learn
+                  {t.home.iWantToLearn}
                 </label>
                 <div className="relative">
                   <div className="absolute left-3 top-1/2 -translate-y-1/2 text-lg pointer-events-none">
@@ -175,7 +177,7 @@ export default function HomeClient({ languages, pairs }: Props) {
               onClick={handleStart}
               className="w-full bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white rounded-xl px-6 py-3.5 font-semibold text-base transition-colors flex items-center justify-center gap-2"
             >
-              Start Learning
+              {t.home.startLearning}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
@@ -188,7 +190,7 @@ export default function HomeClient({ languages, pairs }: Props) {
           {/* Available Courses */}
           <section className="mb-6">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              Available Courses
+              {t.home.availableCourses}
             </h2>
             <div className="space-y-3">
               {pairs.map(pair => (
@@ -233,7 +235,7 @@ export default function HomeClient({ languages, pairs }: Props) {
             </div>
             <div className="mt-3 bg-gray-50 dark:bg-gray-800/50 rounded-2xl border border-dashed border-gray-200 dark:border-gray-700 p-4 text-center">
               <p className="text-sm text-gray-400 dark:text-gray-500">
-                More language pairs coming soon
+                {t.home.moreComing}
               </p>
             </div>
           </section>
@@ -241,14 +243,14 @@ export default function HomeClient({ languages, pairs }: Props) {
           {/* Why Lexora */}
           <section>
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              Why Lexora?
+              {t.home.whyLexora}
             </h2>
             <div className="grid grid-cols-2 gap-3">
               {[
-                { icon: '📚', title: 'CEFR Structured', desc: 'A1 to C2 path' },
-                { icon: '🎯', title: 'Focused Lessons', desc: '15–20 min each' },
-                { icon: '🔁', title: 'Spaced Review', desc: 'SRS flashcards' },
-                { icon: '📱', title: 'Any Device', desc: 'Phone to desktop' },
+                { icon: '📚', title: t.home.cefr,    desc: t.home.cefrDesc },
+                { icon: '🎯', title: t.home.focused,  desc: t.home.focusedDesc },
+                { icon: '🔁', title: t.home.srs,      desc: t.home.srsDesc },
+                { icon: '📱', title: t.home.anyDevice, desc: t.home.anyDeviceDesc },
               ].map(f => (
                 <div
                   key={f.title}

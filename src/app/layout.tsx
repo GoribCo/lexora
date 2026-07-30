@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import ThemeProvider from '@/components/ThemeProvider'
+import UiLanguageProvider from '@/components/UiLanguageProvider'
 import BottomNav from '@/components/BottomNav'
 import ServiceWorkerRegistrar from '@/components/ServiceWorkerRegistrar'
 import config from '@/config'
@@ -68,6 +69,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-gray-50 dark:bg-slate-900 min-h-dvh`}>
         <ThemeProvider>
+          <UiLanguageProvider>
           <ServiceWorkerRegistrar />
           {/*
             max-w-6xl caps the whole layout (sidebar + content) at 1152px.
@@ -80,6 +82,7 @@ export default function RootLayout({
               {children}
             </main>
           </div>
+          </UiLanguageProvider>
         </ThemeProvider>
       </body>
     </html>
