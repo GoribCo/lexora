@@ -32,7 +32,7 @@ export default function SearchClient({ index }: Props) {
   )
 
   return (
-    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl">
+    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl mx-auto lg:mx-0">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Search</h1>
