@@ -3,6 +3,7 @@
     { "code": "bn", "name": "Bengali", "nativeName": "বাংলা", "flag": "🇧🇩" },
     { "code": "de", "name": "German", "nativeName": "Deutsch", "flag": "🇩🇪" },
     { "code": "pl", "name": "Polish", "nativeName": "Polski", "flag": "🇵🇱" },
+    { "code": "ar", "name": "Arabic", "nativeName": "العربية", "flag": "🇸🇦" },
     { "code": "en", "name": "English", "nativeName": "English", "flag": "🇬🇧" },
     { "code": "fr", "name": "French", "nativeName": "Français", "flag": "🇫🇷" },
     { "code": "es", "name": "Spanish", "nativeName": "Español", "flag": "🇪🇸" },
@@ -22,6 +23,13 @@
       "slug": "bn-pl",
       "description": "Learn Polish starting from Bengali",
       "totalLearners": "3.1K"
+    },
+    {
+      "from": { "code": "bn", "name": "Bengali", "nativeName": "বাংলা", "flag": "🇧🇩" },
+      "to": { "code": "ar", "name": "Arabic", "nativeName": "العربية", "flag": "🇸🇦" },
+      "slug": "bn-ar",
+      "description": "Learn Arabic starting from Bengali",
+      "totalLearners": "8.7K"
     }
   ]
 }

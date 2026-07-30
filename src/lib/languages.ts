@@ -1,6 +1,7 @@
 export const LANG_TO_BCP47: Record<string, string> = {
   de: 'de-DE',
   pl: 'pl-PL',
+  ar: 'ar-SA',
   en: 'en-US',
   fr: 'fr-FR',
   es: 'es-ES',
