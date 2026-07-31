@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getLanguagePairs, getLevels, getPairMeta } from '@/lib/content'
-import ThemeToggle from '@/components/ThemeToggle'
+import PageHeader from '@/components/PageHeader'
+import { getPairMeta as getPairSeoMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
@@ -17,13 +18,7 @@ export async function generateMetadata({
   params: Promise<{ pair: string }>
 }): Promise<Metadata> {
   const { pair } = await params
-  const pairs = getLanguagePairs()
-  const pairData = pairs.find(p => p.slug === pair)
-  if (!pairData) return {}
-  return {
-    title: `${pairData.from.name} → ${pairData.to.name}`,
-    description: `Choose your CEFR level to learn ${pairData.to.name} from ${pairData.from.name}.`,
-  }
+  return getPairSeoMeta(pair)
 }
 
 const levelColorMap: Record<string, { badge: string; ring: string; dot: string }> = {
@@ -74,20 +69,8 @@ export default async function PairPage({
   const availableLevels = ['a1']
 
   return (
-    <div className="max-w-md mx-auto px-4 pb-28 pt-6">
-      {/* Header */}
-      <div className="flex items-center justify-between mb-6">
-        <Link
-          href="/"
-          className="flex items-center gap-1.5 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <path d="M19 12H5M12 19l-7-7 7-7" />
-          </svg>
-          <span className="text-sm font-medium">Home</span>
-        </Link>
-        <ThemeToggle />
-      </div>
+    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl mx-auto lg:mx-0">
+      <PageHeader backHref="/" backLabel="Home" />
 
       {/* Pair Hero */}
       <div className="bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-indigo-950/40 dark:to-blue-950/40 rounded-2xl border border-indigo-100 dark:border-indigo-900 p-5 mb-6">
@@ -116,7 +99,7 @@ export default async function PairPage({
         Choose Your Level
       </h2>
 
-      <div className="flex flex-col gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {levels.map(level => {
           const colors = levelColorMap[level.code] ?? levelColorMap.a1
           const available = availableLevels.includes(level.code)
@@ -195,6 +178,34 @@ export default async function PairPage({
             </Link>
           )
         })}
+      </div>
+
+      {/* Course tools */}
+      <div className="grid grid-cols-2 gap-3 mt-6">
+        <Link
+          href={`/${pair}/vocabulary`}
+          className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-600 hover:shadow-md transition-all p-4 group"
+        >
+          <div className="w-9 h-9 bg-indigo-50 dark:bg-indigo-950/50 rounded-xl flex items-center justify-center text-xl shrink-0">
+            📖
+          </div>
+          <div className="min-w-0">
+            <div className="font-semibold text-sm text-gray-900 dark:text-white">Vocabulary</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">All words</div>
+          </div>
+        </Link>
+        <Link
+          href={`/${pair}/progress`}
+          className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-600 hover:shadow-md transition-all p-4 group"
+        >
+          <div className="w-9 h-9 bg-emerald-50 dark:bg-emerald-950/50 rounded-xl flex items-center justify-center text-xl shrink-0">
+            📊
+          </div>
+          <div className="min-w-0">
+            <div className="font-semibold text-sm text-gray-900 dark:text-white">Progress</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">Mastery stats</div>
+          </div>
+        </Link>
       </div>
     </div>
   )

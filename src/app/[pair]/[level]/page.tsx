@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { getLanguagePairs, getLevels, getStages } from '@/lib/content'
-import ThemeToggle from '@/components/ThemeToggle'
+import PageHeader from '@/components/PageHeader'
+import StageCheckBadge from '@/components/StageCheckBadge'
+import { DifficultyBadge } from '@/components/DifficultyRating'
+import { NoteIndicator } from '@/components/StageNotes'
+import { getLevelMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
@@ -28,13 +32,7 @@ export async function generateMetadata({
   params: Promise<{ pair: string; level: string }>
 }): Promise<Metadata> {
   const { pair, level } = await params
-  const levels = getLevels()
-  const levelData = levels.find(l => l.code === level)
-  if (!levelData) return {}
-  return {
-    title: `${levelData.fullName} – ${pair.toUpperCase()}`,
-    description: `${levelData.description} Learn step by step.`,
-  }
+  return getLevelMeta(pair, level)
 }
 
 const levelColorMap: Record<string, { badge: string; bg: string; border: string; text: string }> = {
@@ -92,20 +90,8 @@ export default async function LevelPage({
   const colors = levelColorMap[level] ?? levelColorMap.a1
 
   return (
-    <div className="max-w-md mx-auto px-4 pb-28 pt-6">
-      {/* Header */}
-      <div className="flex items-center justify-between mb-6">
-        <Link
-          href={`/${pair}`}
-          className="flex items-center gap-1.5 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <path d="M19 12H5M12 19l-7-7 7-7" />
-          </svg>
-          <span className="text-sm font-medium">{pair.toUpperCase()}</span>
-        </Link>
-        <ThemeToggle />
-      </div>
+    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl mx-auto lg:mx-0">
+      <PageHeader backHref={`/${pair}`} backLabel={pair.toUpperCase()} />
 
       {/* Level Hero */}
       <div className={`bg-gradient-to-br ${colors.bg} rounded-2xl border ${colors.border} p-5 mb-6`}>
@@ -155,7 +141,7 @@ export default async function LevelPage({
       </div>
 
       {/* Stage list */}
-      <div className="space-y-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {stages.map((stage, idx) => (
           <Link
             key={stage.number}
@@ -214,6 +200,9 @@ export default async function LevelPage({
                       Start here
                     </span>
                   )}
+                  <StageCheckBadge pair={pair} level={level} stageNum={stage.number} />
+                  <DifficultyBadge pair={pair} level={level} stageNum={stage.number} />
+                  <NoteIndicator pair={pair} level={level} stageNum={stage.number} />
                 </div>
               </div>
             </div>

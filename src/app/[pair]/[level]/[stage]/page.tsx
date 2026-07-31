@@ -1,9 +1,19 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getLanguagePairs, getLevels, getStages, getStage } from '@/lib/content'
-import ThemeToggle from '@/components/ThemeToggle'
+import PageHeader from '@/components/PageHeader'
+import StreakBadge from '@/components/StreakBadge'
 import StageContent from './StageContent'
+import MarkComplete from '@/components/MarkComplete'
+import LevelProgressBar from '@/components/LevelProgressBar'
+import TableOfContents from '@/components/TableOfContents'
+import { parseFlashcardsFromMarkdown } from '@/lib/flashcards'
+import { getLangCode } from '@/lib/languages'
+import { getStageMeta, stageJsonLd } from '@/lib/seo'
 import type { Metadata } from 'next'
+import StageFlashcardSection from './StageFlashcardSection'
+import StageNotes from '@/components/StageNotes'
+import DifficultyRating from '@/components/DifficultyRating'
 
 export const dynamic = 'force-static'
 
@@ -33,12 +43,7 @@ export async function generateMetadata({
   params: Promise<{ pair: string; level: string; stage: string }>
 }): Promise<Metadata> {
   const { pair, level, stage } = await params
-  const stageData = getStage(pair, level, parseInt(stage, 10))
-  if (!stageData) return {}
-  return {
-    title: `Stage ${stageData.number}: ${stageData.title}`,
-    description: stageData.description,
-  }
+  return getStageMeta(pair, level, parseInt(stage, 10))
 }
 
 const levelColorMap: Record<string, { badge: string; text: string }> = {
@@ -73,23 +78,33 @@ export default async function StagePage({
 
   const colors = levelColorMap[level] ?? levelColorMap.a1
 
+  // Parse flashcards from stage content at build time
+  const flashcards = parseFlashcardsFromMarkdown(stageData.content)
+  const langCode = getLangCode(pair)
+
   return (
-    <div className="max-w-md mx-auto px-4 pb-28 pt-6">
-      {/* Header */}
-      <div className="flex items-center justify-between mb-6">
-        <Link
-          href={`/${pair}/${level}`}
-          className="flex items-center gap-1.5 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <path d="M19 12H5M12 19l-7-7 7-7" />
-          </svg>
-          <span className="text-sm font-medium">
-            {levelData?.fullName ?? level.toUpperCase()}
-          </span>
-        </Link>
-        <ThemeToggle />
-      </div>
+    <>
+      {/* JSON-LD structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(stageJsonLd(pair, level, stageNumber)),
+        }}
+      />
+    <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl mx-auto lg:mx-0">
+      <PageHeader
+        backHref={`/${pair}/${level}`}
+        backLabel={levelData?.fullName ?? level.toUpperCase()}
+        right={<StreakBadge />}
+      />
+
+      {/* Level progress bar */}
+      <LevelProgressBar
+        pair={pair}
+        level={level}
+        totalStages={allStages.length}
+        currentStage={currentIndex + 1}
+      />
 
       {/* Stage header */}
       <div className="mb-6">
@@ -135,8 +150,28 @@ export default async function StagePage({
       {/* Divider */}
       <div className="h-px bg-gray-100 dark:bg-gray-800 mb-6" />
 
-      {/* Markdown content */}
-      <StageContent content={stageData.content} />
+      {/* Content + TOC sidebar (TOC only visible on xl+) */}
+      <div className="xl:flex xl:gap-10 xl:items-start">
+        <div className="flex-1 min-w-0">
+          {/* Markdown content */}
+          <StageContent content={stageData.content} />
+
+          {/* Flashcard deck + Quiz toggle */}
+          <StageFlashcardSection cards={flashcards} langCode={langCode} />
+
+          {/* Mark complete */}
+          <MarkComplete pair={pair} level={level} stageNum={stageNumber} />
+
+          {/* Difficulty rating */}
+          <DifficultyRating pair={pair} level={level} stageNum={stageNumber} />
+
+          {/* Stage notes */}
+          <StageNotes pair={pair} level={level} stageNum={stageNumber} />
+        </div>
+
+        {/* TOC — sticky sidebar, only xl+ */}
+        <TableOfContents content={stageData.content} />
+      </div>
 
       {/* Bottom navigation */}
       <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-800">
@@ -183,5 +218,6 @@ export default async function StagePage({
         </div>
       </div>
     </div>
+    </>
   )
 }
