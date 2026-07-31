@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { getLanguagePairs, getLevels, getStages } from '@/lib/content'
 import PageHeader from '@/components/PageHeader'
 import StageCheckBadge from '@/components/StageCheckBadge'
+import { DifficultyBadge } from '@/components/DifficultyRating'
+import { NoteIndicator } from '@/components/StageNotes'
 import { getLevelMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
@@ -199,6 +201,8 @@ export default async function LevelPage({
                     </span>
                   )}
                   <StageCheckBadge pair={pair} level={level} stageNum={stage.number} />
+                  <DifficultyBadge pair={pair} level={level} stageNum={stage.number} />
+                  <NoteIndicator pair={pair} level={level} stageNum={stage.number} />
                 </div>
               </div>
             </div>

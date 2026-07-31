@@ -179,6 +179,34 @@ export default async function PairPage({
           )
         })}
       </div>
+
+      {/* Course tools */}
+      <div className="grid grid-cols-2 gap-3 mt-6">
+        <Link
+          href={`/${pair}/vocabulary`}
+          className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-600 hover:shadow-md transition-all p-4 group"
+        >
+          <div className="w-9 h-9 bg-indigo-50 dark:bg-indigo-950/50 rounded-xl flex items-center justify-center text-xl shrink-0">
+            📖
+          </div>
+          <div className="min-w-0">
+            <div className="font-semibold text-sm text-gray-900 dark:text-white">Vocabulary</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">All words</div>
+          </div>
+        </Link>
+        <Link
+          href={`/${pair}/progress`}
+          className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-600 hover:shadow-md transition-all p-4 group"
+        >
+          <div className="w-9 h-9 bg-emerald-50 dark:bg-emerald-950/50 rounded-xl flex items-center justify-center text-xl shrink-0">
+            📊
+          </div>
+          <div className="min-w-0">
+            <div className="font-semibold text-sm text-gray-900 dark:text-white">Progress</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">Mastery stats</div>
+          </div>
+        </Link>
+      </div>
     </div>
   )
 }

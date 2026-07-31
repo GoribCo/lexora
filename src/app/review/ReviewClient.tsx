@@ -6,6 +6,7 @@ import { updateStreak } from '@/lib/progress'
 import SpeakButton from '@/components/SpeakButton'
 import { getLangCode } from '@/lib/languages'
 import { useUiLang } from '@/components/UiLanguageProvider'
+import KeyboardShortcuts from '@/components/KeyboardShortcuts'
 
 interface Props {
   pair: string
@@ -59,6 +60,24 @@ export default function ReviewClient({ pair, pairLabel }: Props) {
 
   return (
     <div>
+      <KeyboardShortcuts
+        onFlip={() => setFlipped(f => !f)}
+        onNext={() => {
+          if (flipped && currentIndex + 1 < total) {
+            setFlipped(false)
+            setCurrentIndex(i => i + 1)
+          }
+        }}
+        onPrev={() => {
+          if (currentIndex > 0) {
+            setFlipped(false)
+            setCurrentIndex(i => i - 1)
+          }
+        }}
+        onScore1={flipped ? () => handleScore(1) : undefined}
+        onScore2={flipped ? () => handleScore(2) : undefined}
+        onScore3={flipped ? () => handleScore(3) : undefined}
+      />
       {/* Progress bar */}
       <div className="mb-4">
         <div className="flex items-center justify-between mb-1.5">

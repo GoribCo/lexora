@@ -6,12 +6,14 @@ import StreakBadge from '@/components/StreakBadge'
 import StageContent from './StageContent'
 import MarkComplete from '@/components/MarkComplete'
 import LevelProgressBar from '@/components/LevelProgressBar'
-import FlashcardDeck from '@/components/FlashcardDeck'
 import TableOfContents from '@/components/TableOfContents'
 import { parseFlashcardsFromMarkdown } from '@/lib/flashcards'
 import { getLangCode } from '@/lib/languages'
 import { getStageMeta, stageJsonLd } from '@/lib/seo'
 import type { Metadata } from 'next'
+import StageFlashcardSection from './StageFlashcardSection'
+import StageNotes from '@/components/StageNotes'
+import DifficultyRating from '@/components/DifficultyRating'
 
 export const dynamic = 'force-static'
 
@@ -154,13 +156,17 @@ export default async function StagePage({
           {/* Markdown content */}
           <StageContent content={stageData.content} />
 
-          {/* Flashcard deck */}
-          {flashcards.length > 0 && (
-            <FlashcardDeck cards={flashcards} langCode={langCode} />
-          )}
+          {/* Flashcard deck + Quiz toggle */}
+          <StageFlashcardSection cards={flashcards} langCode={langCode} />
 
           {/* Mark complete */}
           <MarkComplete pair={pair} level={level} stageNum={stageNumber} />
+
+          {/* Difficulty rating */}
+          <DifficultyRating pair={pair} level={level} stageNum={stageNumber} />
+
+          {/* Stage notes */}
+          <StageNotes pair={pair} level={level} stageNum={stageNumber} />
         </div>
 
         {/* TOC — sticky sidebar, only xl+ */}

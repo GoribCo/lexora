@@ -120,6 +120,39 @@ export interface Translations {
     loading: string
     streak: string
   }
+  vocabulary: {
+    title: string
+    allPairs: string
+    allLevels: string
+    words: string
+    unseen: string
+    learning: string
+    mastered: string
+  }
+  progress: {
+    title: string
+    wordsLearned: string
+    mastered: string
+    learning: string
+    newWords: string
+  }
+  notes: {
+    title: string
+    placeholder: string
+    saved: string
+  }
+  quiz: {
+    title: string
+    correct: string
+    wrong: string
+    score: string
+    retry: string
+    next: string
+  }
+  wotd: {
+    title: string
+    viewStage: string
+  }
 }
 
 const en: Translations = {
@@ -210,6 +243,39 @@ const en: Translations = {
     resetDone: 'Progress reset.',
   },
   common: { back: 'Back', home: 'Home', loading: 'Loading...', streak: 'day streak' },
+  vocabulary: {
+    title: 'Vocabulary',
+    allPairs: 'All Courses',
+    allLevels: 'All Levels',
+    words: 'words',
+    unseen: 'New',
+    learning: 'Learning',
+    mastered: 'Mastered',
+  },
+  progress: {
+    title: 'Progress',
+    wordsLearned: 'Words Learned',
+    mastered: 'Mastered',
+    learning: 'Learning',
+    newWords: 'New',
+  },
+  notes: {
+    title: 'My Notes',
+    placeholder: 'Add notes for this stage...',
+    saved: 'Saved',
+  },
+  quiz: {
+    title: 'Quiz',
+    correct: 'Correct!',
+    wrong: 'Wrong',
+    score: 'Your score',
+    retry: 'Try Again',
+    next: 'Next',
+  },
+  wotd: {
+    title: 'Word of the Day',
+    viewStage: 'View Lesson',
+  },
 }
 
 const bn: Translations = {
@@ -300,6 +366,39 @@ const bn: Translations = {
     resetDone: 'অগ্রগতি রিসেট হয়েছে।',
   },
   common: { back: 'ফিরে যান', home: 'হোম', loading: 'লোড হচ্ছে...', streak: 'দিনের স্ট্রিক' },
+  vocabulary: {
+    title: 'শব্দভাণ্ডার',
+    allPairs: 'সব কোর্স',
+    allLevels: 'সব স্তর',
+    words: 'শব্দ',
+    unseen: 'নতুন',
+    learning: 'শেখা হচ্ছে',
+    mastered: 'শেখা হয়েছে',
+  },
+  progress: {
+    title: 'অগ্রগতি',
+    wordsLearned: 'শেখা শব্দ',
+    mastered: 'শেখা হয়েছে',
+    learning: 'শেখা হচ্ছে',
+    newWords: 'নতুন',
+  },
+  notes: {
+    title: 'আমার নোট',
+    placeholder: 'এই পাঠের জন্য নোট লিখুন...',
+    saved: 'সংরক্ষিত',
+  },
+  quiz: {
+    title: 'কুইজ',
+    correct: 'সঠিক!',
+    wrong: 'ভুল',
+    score: 'আপনার স্কোর',
+    retry: 'আবার চেষ্টা করুন',
+    next: 'পরবর্তী',
+  },
+  wotd: {
+    title: 'আজকের শব্দ',
+    viewStage: 'পাঠ দেখুন',
+  },
 }
 
 const hi: Translations = {
@@ -390,6 +489,39 @@ const hi: Translations = {
     resetDone: 'प्रगति रीसेट हो गई।',
   },
   common: { back: 'वापस', home: 'होम', loading: 'लोड हो रहा है...', streak: 'दिन की स्ट्रीक' },
+  vocabulary: {
+    title: 'शब्दावली',
+    allPairs: 'सभी कोर्स',
+    allLevels: 'सभी स्तर',
+    words: 'शब्द',
+    unseen: 'नया',
+    learning: 'सीख रहे हैं',
+    mastered: 'सीख लिया',
+  },
+  progress: {
+    title: 'प्रगति',
+    wordsLearned: 'सीखे शब्द',
+    mastered: 'सीख लिया',
+    learning: 'सीख रहे हैं',
+    newWords: 'नया',
+  },
+  notes: {
+    title: 'मेरे नोट्स',
+    placeholder: 'इस पाठ के लिए नोट्स लिखें...',
+    saved: 'सहेजा',
+  },
+  quiz: {
+    title: 'क्विज़',
+    correct: 'सही!',
+    wrong: 'गलत',
+    score: 'आपका स्कोर',
+    retry: 'फिर से कोशिश करें',
+    next: 'अगला',
+  },
+  wotd: {
+    title: 'आज का शब्द',
+    viewStage: 'पाठ देखें',
+  },
 }
 
 export const translations: Record<UiLang, Translations> = { en, bn, hi }

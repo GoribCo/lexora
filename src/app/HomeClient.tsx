@@ -5,15 +5,22 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import ThemeToggle from '@/components/ThemeToggle'
 import StreakBadge from '@/components/StreakBadge'
+import WordOfTheDay from '@/components/WordOfTheDay'
 import { useUiLang } from '@/components/UiLanguageProvider'
 import type { Language, LanguagePair } from '@/lib/types'
+
+interface WotdWord {
+  front: string; pronunciation: string; back: string; english: string
+  pair: string; pairLabel: string; level: string; stageNum: number
+}
 
 interface Props {
   languages: Language[]
   pairs: LanguagePair[]
+  allWords: WotdWord[]
 }
 
-export default function HomeClient({ languages, pairs }: Props) {
+export default function HomeClient({ languages, pairs, allWords }: Props) {
   const router = useRouter()
   const { t } = useUiLang()
   const [fromLang, setFromLang] = useState('bn')
@@ -81,6 +88,9 @@ export default function HomeClient({ languages, pairs }: Props) {
 
         {/* Left column: Hero + Language selector */}
         <div>
+          {/* Word of the Day */}
+          <WordOfTheDay allWords={allWords} />
+
           {/* Hero */}
           <div className="mb-6">
             <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white leading-tight mb-2 lg:hidden">
@@ -241,7 +251,7 @@ export default function HomeClient({ languages, pairs }: Props) {
           </section>
 
           {/* Why Lexora */}
-          <section>
+          <section className="mb-6">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
               {t.home.whyLexora}
             </h2>
@@ -262,6 +272,13 @@ export default function HomeClient({ languages, pairs }: Props) {
                 </div>
               ))}
             </div>
+          </section>
+
+          {/* Tools */}
+          <section>
+            <p className="text-xs text-gray-400 dark:text-gray-500 text-center mt-2">
+              📖 Vocabulary &amp; 📊 Progress are available inside each course
+            </p>
           </section>
         </div>
 

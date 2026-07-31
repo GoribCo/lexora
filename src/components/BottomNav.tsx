@@ -46,6 +46,7 @@ export default function BottomNav() {
     if (href === '/settings') return pathname.startsWith('/settings')
     if (href === '/review') return pathname.startsWith('/review')
     if (href === '/courses') {
+      // Active on /courses or any pair-scoped page (levels, stages, vocabulary, progress)
       return pathname.startsWith('/courses') || /^\/[a-z]{2}-[a-z]{2}/.test(pathname)
     }
     return pathname.startsWith(href)
