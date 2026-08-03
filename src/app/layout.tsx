@@ -5,6 +5,7 @@ import ThemeProvider from '@/components/ThemeProvider'
 import UiLanguageProvider from '@/components/UiLanguageProvider'
 import BottomNav from '@/components/BottomNav'
 import ServiceWorkerRegistrar from '@/components/ServiceWorkerRegistrar'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 import config from '@/config'
 
 const inter = Inter({
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans antialiased bg-gray-50 dark:bg-slate-900 min-h-dvh`}>
         <ThemeProvider>
           <UiLanguageProvider>
+          <GoogleAnalytics />
           <ServiceWorkerRegistrar />
           {/*
             max-w-6xl caps the whole layout (sidebar + content) at 1152px.

@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
+import { trackSpeak } from '@/lib/analytics'
 
 interface Props {
   text: string
@@ -26,6 +27,7 @@ export default function SpeakButton({ text, lang }: Props) {
     }
     const utter = new SpeechSynthesisUtterance(text)
     utter.lang = lang
+    trackSpeak(text, lang)
     utter.onstart = () => setSpeaking(true)
     utter.onend = () => setSpeaking(false)
     utter.onerror = () => setSpeaking(false)

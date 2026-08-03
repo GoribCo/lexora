@@ -6,6 +6,7 @@ import { getStreak, getTotalCompletedStages, resetProgress } from '@/lib/progres
 import ThemeToggle from '@/components/ThemeToggle'
 import { useUiLang } from '@/components/UiLanguageProvider'
 import { UI_LANGUAGES } from '@/lib/i18n'
+import { trackExport, trackImport } from '@/lib/analytics'
 
 type FontSize = 'small' | 'medium' | 'large'
 type ToastType = 'success' | 'error'
@@ -68,6 +69,7 @@ export default function SettingsClient() {
       ratings: (() => { try { return JSON.parse(localStorage.getItem('lexora_stage_ratings') || '{}') } catch { return {} } })(),
       notes: (() => { try { return JSON.parse(localStorage.getItem('lexora_stage_notes') || '{}') } catch { return {} } })(),
     }
+    trackExport()
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -95,8 +97,10 @@ export default function SettingsClient() {
         const s = getStreak()
         setStreak(s.count)
         setTotalStages(getTotalCompletedStages())
+        trackImport(true)
         showToast('Backup imported successfully!', 'success')
       } catch (err) {
+        trackImport(false)
         showToast(`Import failed: ${err instanceof Error ? err.message : 'Invalid file'}`, 'error')
       }
     }

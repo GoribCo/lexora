@@ -7,6 +7,7 @@ import ThemeToggle from '@/components/ThemeToggle'
 import StreakBadge from '@/components/StreakBadge'
 import WordOfTheDay from '@/components/WordOfTheDay'
 import { useUiLang } from '@/components/UiLanguageProvider'
+import { trackCourseSelect } from '@/lib/analytics'
 import type { Language, LanguagePair } from '@/lib/types'
 
 interface WotdWord {
@@ -30,6 +31,7 @@ export default function HomeClient({ languages, pairs, allWords }: Props) {
     const slug = `${fromLang}-${toLang}`
     const pairExists = pairs.some(p => p.slug === slug)
     if (pairExists) {
+      trackCourseSelect(slug)
       router.push(`/${slug}`)
     } else {
       alert(`${fromLang.toUpperCase()} → ${toLang.toUpperCase()} ${t.home.pairNotAvailable}`)

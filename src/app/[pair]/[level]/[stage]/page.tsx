@@ -157,7 +157,7 @@ export default async function StagePage({
           <StageContent content={stageData.content} />
 
           {/* Flashcard deck + Quiz toggle */}
-          <StageFlashcardSection cards={flashcards} langCode={langCode} />
+          <StageFlashcardSection cards={flashcards} langCode={langCode} pair={pair} level={level} stage={stageNumber} />
 
           {/* Mark complete */}
           <MarkComplete pair={pair} level={level} stageNum={stageNumber} />
