@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import type { Opportunities } from '@/lib/types'
+import { trackOpportunitiesHighlightClick } from '@/lib/analytics'
 
 interface Props {
   pair: string
@@ -31,6 +34,7 @@ export default function OpportunityHighlights({ pair, opportunities, toName }: P
         {opportunities.highlights.map((h, i) => (
           <Link
             key={i}
+            onClick={() => trackOpportunitiesHighlightClick(pair, h.title)}
             href={`/${pair}/opportunities`}
             className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-600 hover:shadow-md transition-all p-4 group"
           >

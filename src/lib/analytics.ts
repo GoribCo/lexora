@@ -83,6 +83,19 @@ export function trackLevelSelect(pair: string, level: string) {
   gtag('event', 'level_select', { pair, level })
 }
 
+// ── Opportunities events ──────────────────────────────────────────────────
+export function trackOpportunitiesView(pair: string) {
+  gtag('event', 'opportunities_view', { pair })
+}
+
+export function trackOpportunitiesHighlightClick(pair: string, highlightTitle: string) {
+  gtag('event', 'opportunities_highlight_click', { pair, highlight: highlightTitle })
+}
+
+export function trackOpportunitiesCtaClick(pair: string) {
+  gtag('event', 'opportunities_cta_click', { pair })
+}
+
 // ── Export / Import ───────────────────────────────────────────────────────
 export function trackExport() {
   gtag('event', 'export_progress')

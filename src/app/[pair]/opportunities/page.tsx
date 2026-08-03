@@ -1,6 +1,7 @@
 import { getLanguagePairs, getOpportunities } from '@/lib/content'
 import PageHeader from '@/components/PageHeader'
 import OpportunitiesContent from './OpportunitiesContent'
+import { OpportunitiesTracker, OpportunitiesCtaLink } from './OpportunitiesTracker'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
@@ -47,6 +48,7 @@ export default async function OpportunitiesPage({
 
   return (
     <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl mx-auto lg:mx-0">
+      <OpportunitiesTracker pair={pair} />
       <PageHeader backHref={`/${pair}`} backLabel={pairLabel} />
 
       {/* Hero */}
@@ -154,7 +156,8 @@ export default async function OpportunitiesPage({
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
           Begin your {pairData.to.name} journey from A1 today
         </p>
-        <a
+        <OpportunitiesCtaLink
+          pair={pair}
           href={`/${pair}/a1`}
           className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold text-sm transition-colors"
         >
@@ -162,7 +165,7 @@ export default async function OpportunitiesPage({
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
-        </a>
+        </OpportunitiesCtaLink>
       </div>
     </div>
   )
