@@ -6,6 +6,7 @@ import UiLanguageProvider from '@/components/UiLanguageProvider'
 import BottomNav from '@/components/BottomNav'
 import ServiceWorkerRegistrar from '@/components/ServiceWorkerRegistrar'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import InstallBanner from '@/components/InstallBanner'
 import config from '@/config'
 
 const inter = Inter({
@@ -65,8 +66,22 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.json" />
+
+        {/* Apple PWA — enables "Add to Home Screen" via Safari on iOS */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Lexora" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        {/* Splash screens for common iPhone sizes */}
+        <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+        {/* Prevent auto-detection of phone numbers / emails */}
+        <meta name="format-detection" content="telephone=no" />
+
+        {/* Android / Chrome: status bar colour */}
+        <meta name="theme-color" content="#4f46e5" />
+
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-gray-50 dark:bg-slate-900 min-h-dvh`}>
         <ThemeProvider>
@@ -84,6 +99,7 @@ export default function RootLayout({
               {children}
             </main>
           </div>
+          <InstallBanner />
           </UiLanguageProvider>
         </ThemeProvider>
       </body>
