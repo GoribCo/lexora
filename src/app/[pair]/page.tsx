@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { getLanguagePairs, getLevels, getPairMeta } from '@/lib/content'
+import { getLanguagePairs, getLevels, getPairMeta, getOpportunities } from '@/lib/content'
 import PageHeader from '@/components/PageHeader'
+import OpportunityHighlights from '@/components/OpportunityHighlights'
 import { getPairMeta as getPairSeoMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
@@ -66,6 +67,7 @@ export default async function PairPage({
 
   const levels = getLevels()
   const meta = getPairMeta(pair)
+  const opportunities = getOpportunities(pair)
   const availableLevels = ['a1']
 
   return (
@@ -179,6 +181,17 @@ export default async function PairPage({
           )
         })}
       </div>
+
+      {/* Opportunities highlights */}
+      {opportunities && (
+        <div className="mt-6">
+          <OpportunityHighlights
+            pair={pair}
+            opportunities={opportunities}
+            toName={pairData.to.name}
+          />
+        </div>
+      )}
 
       {/* Course tools */}
       <div className="grid grid-cols-2 gap-3 mt-6">
