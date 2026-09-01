@@ -1,112 +1,122 @@
 ---
 stage: 1
-title: "Grüßen – Greetings"
-titleBn: "শুভেচ্ছা"
-description: "Learn essential German greetings and farewells used in everyday situations."
-duration: "15 min"
-vocabulary: 8
+title: "Das Alphabet – The Alphabet"
+titleBn: "বর্ণমালা"
+description: "Learn the German alphabet, special letters, and pronunciation basics before starting your first lesson."
+duration: "20 min"
+vocabulary: 30
 ---
 
 ## পরিচিতি / Introduction
 
-জার্মান ভাষায় শুভেচ্ছা জানানো শেখা হলো প্রথম এবং সবচেয়ে গুরুত্বপূর্ণ পদক্ষেপ। জার্মানরা শুভেচ্ছায় বেশ আনুষ্ঠানিক — বিশেষত অপরিচিত ব্যক্তির সাথে।
+জার্মান ভাষা শেখার প্রথম ধাপ হলো এর বর্ণমালা এবং উচ্চারণ বোঝা। জার্মান বর্ণমালায় ইংরেজির ২৬টি অক্ষরের সাথে আরও ৪টি বিশেষ অক্ষর যুক্ত আছে — যা জার্মান ভাষাকে তার নিজস্ব ধ্বনি দেয়।
 
-Learning greetings in German is the first and most important step. Germans tend to be quite formal in greetings — especially with strangers. Using the right greeting at the right time shows cultural awareness and earns respect.
+Before learning any words or phrases, it's essential to understand the German alphabet. It uses the same 26 letters as English, plus four special characters — three umlauts (ä, ö, ü) and one unique letter (ß, "eszett") — that give German its distinctive sound.
 
 ---
 
-## শব্দভাণ্ডার / Vocabulary
+## শব্দভাণ্ডার / Vocabulary — বর্ণমালা (The Alphabet)
 
 | German | Pronunciation | Bengali | English |
 |--------|--------------|---------|---------|
-| Hallo | HA-lo | হ্যালো | Hello |
-| Guten Morgen | GOO-ten MOR-gen | শুভ সকাল | Good morning |
-| Guten Tag | GOO-ten TAHK | শুভ দিন | Good day / Hello |
-| Guten Abend | GOO-ten AH-bent | শুভ সন্ধ্যা | Good evening |
-| Gute Nacht | GOO-teh NAKHT | শুভ রাত্রি | Good night |
-| Auf Wiedersehen | owf VEE-der-zay-en | বিদায় | Goodbye (formal) |
-| Tschüss | CHOOS | আলবিদা | Bye (informal) |
-| Bis bald | bis BALT | শীঘ্রই দেখা হবে | See you soon |
+| A a | ah | আ | A |
+| B b | bay | বে | B |
+| C c | tsay | ৎসে | C |
+| D d | day | ডে | D |
+| E e | ay | এ | E |
+| F f | eff | এফ | F |
+| G g | gay | গে | G |
+| H h | hah | হা | H |
+| I i | ee | ই | I |
+| J j | yot | ইয়ট | J |
+| K k | kah | কা | K |
+| L l | ell | এল্‌ | L |
+| M m | emm | এম্‌ | M |
+| N n | enn | এন্‌ | N |
+| O o | oh | ও | O |
+| P p | pay | পে | P |
+| Q q | koo | কু | Q |
+| R r | air | এয়ার | R |
+| S s | ess | এস্‌ | S |
+| T t | tay | টে | T |
+| U u | oo | উ | U |
+| V v | fow | ফাউ | V |
+| W w | vay | ভে | W |
+| X x | icks | ইক্স | X |
+| Y y | üpsilon | ইপ্সিলন | Y |
+| Z z | tsett | ৎসেট | Z |
+
+---
+
+## বিশেষ অক্ষর / Special Letters
+
+**Ä ä** *(eh)* — উমলাউট এ / Umlaut A — যেমন **Mädchen** (মেয়ে / girl)
+
+**Ö ö** *(er)* — উমলাউট ও / Umlaut O — যেমন **schön** (সুন্দর / beautiful)
+
+**Ü ü** *(ue)* — উমলাউট উ / Umlaut U — যেমন **über** (উপরে / over)
+
+**ß** *(ess-tsett)* — একটি ডাবল-এস / a "sharp S" — যেমন **Straße** (রাস্তা / street)
+
+> 💡 আধুনিক সুইজারল্যান্ডে **ß** ব্যবহৃত হয় না — তার বদলে "ss" লেখা হয়।
+> In modern Switzerland, **ß** is not used — "ss" is written instead.
 
 ---
 
 ## সাধারণ বাক্যাংশ / Common Phrases
 
-### আনুষ্ঠানিক শুভেচ্ছা (Formal Greetings)
+**Wie schreibt man das?** *(vee shryebt man das?)*
+এটা কীভাবে লেখা হয়? / How do you spell that?
 
-**Wie geht es Ihnen?** *(VEE gayt es EE-nen)*
-আপনি কেমন আছেন? / How are you? (formal)
+**Können Sie das buchstabieren?** *(KUR-nen zee das bookh-shta-BEER-en?)*
+আপনি কি এটা বানান করে বলতে পারবেন? / Could you spell that out? (formal)
 
-**Es geht mir gut, danke.** *(es gayt meer goot, DANK-eh)*
-আমি ভালো আছি, ধন্যবাদ। / I am well, thank you.
+**Ich buchstabiere meinen Namen.** *(ikh bookh-shta-BEER-eh MY-nen NAH-men)*
+আমি আমার নাম বানান করে বলছি। / I'm spelling out my name.
 
-**Sehr gut, danke. Und Ihnen?** *(zayr goot, DANK-eh. oont EE-nen?)*
-খুব ভালো, ধন্যবাদ। আর আপনি? / Very well, thank you. And you?
-
-### অনানুষ্ঠানিক শুভেচ্ছা (Informal Greetings)
-
-**Wie geht's?** *(VEE gayts?)*
-কেমন আছ? / How's it going? (informal)
-
-**Gut, und dir?** *(goot, oont deer?)*
-ভালো, তুমি কেমন? / Good, and you? (informal)
-
-**Na, alles klar?** *(nah, AL-es klar?)*
-সব ঠিকঠাক? / Everything okay? (very casual)
+**Das schreibt man mit "ß", nicht "ss".** *(das shryebt man mit ess-tsett, nikht ess-ess)*
+এটা "ß" দিয়ে লেখা হয়, "ss" দিয়ে নয়। / That's written with "ß", not "ss".
 
 ---
 
-## অনুশীলন সংলাপ / Practice Dialogues
+## অনুশীলন সংলাপ / Practice Dialogue
 
-### সংলাপ ১ — অফিসে (Dialogue 1 — At the office)
+### বানান করা (Spelling your name)
 
-**Anna:** Guten Morgen, Herr Müller!
-*(শুভ সকাল, মুলার সাহেব!)*
+**Rezeptionist:** Wie ist Ihr Name, bitte?
+*(আপনার নাম কী, দয়া করে?)*
 
-**Herr Müller:** Guten Morgen, Frau Schmidt! Wie geht es Ihnen?
-*(শুভ সকাল, শ্মিট ম্যাডাম! আপনি কেমন আছেন?)*
+**Gast:** Mein Name ist Sudipta.
+*(আমার নাম সুদীপ্তা।)*
 
-**Anna:** Es geht mir gut, danke. Und Ihnen?
-*(আমি ভালো আছি, ধন্যবাদ। আর আপনি?)*
+**Rezeptionist:** Können Sie das buchstabieren?
+*(আপনি কি এটা বানান করে বলতে পারবেন?)*
 
-**Herr Müller:** Auch gut, danke. Auf Wiedersehen!
-*(আমিও ভালো, ধন্যবাদ। বিদায়!)*
+**Gast:** S-U-D-I-P-T-A.
+*(এস-ইউ-ডি-আই-পি-টি-এ।)*
 
-**Anna:** Auf Wiedersehen!
-*(বিদায়!)*
-
----
-
-### সংলাপ ২ — বন্ধুদের মধ্যে (Dialogue 2 — Between friends)
-
-**Leila:** Hey, Tschüss!
-*(হেই, আলবিদা!)*
-
-**Tom:** Tschüss! Bis bald!
-*(আলবিদা! শীঘ্রই দেখা হবে!)*
-
-**Leila:** Ja, bis morgen!
-*(হ্যাঁ, আগামীকাল দেখা হবে!)*
+**Rezeptionist:** Danke schön!
+*(অনেক ধন্যবাদ!)*
 
 ---
 
 ## সাংস্কৃতিক নোট / Cultural Note
 
-> **জার্মান শুভেচ্ছার শিষ্টাচার**
+> **উচ্চারণের নিয়ম**
 >
-> জার্মানিতে, আনুষ্ঠানিক পরিস্থিতিতে "Guten Tag" সবচেয়ে সাধারণ শুভেচ্ছা। "Hallo" বন্ধু এবং পরিচিতদের জন্য ব্যবহৃত হয়। দক্ষিণ জার্মানিতে (বাভারিয়া), "Servus" এবং "Grüß Gott" সাধারণত ব্যবহৃত হয়।
+> জার্মান ভাষায় প্রতিটি অক্ষর মোটামুটি নির্দিষ্টভাবে উচ্চারিত হয় — ইংরেজির মতো অনিয়মিত নয়। একবার বর্ণমালার উচ্চারণ শিখে ফেললে, যেকোনো নতুন শব্দ পড়া অনেক সহজ হয়ে যায়।
 >
-> In Germany, "Guten Tag" is the most common greeting in formal situations. "Hallo" is used for friends and acquaintances. In southern Germany (Bavaria), "Servus" and "Grüß Gott" are commonly used instead.
+> German pronunciation is largely consistent — unlike English, letters are pronounced predictably. Once you learn the alphabet's sounds, reading new words becomes much easier.
 >
-> হ্যান্ডশেক করা জার্মানিতে প্রথম সাক্ষাতে বা পেশাদার পরিবেশে সাধারণ। ঘনিষ্ঠ বন্ধুরা গালে চুমু দেয় না — তারা সাধারণত আলিঙ্গন করে।
+> সব বিশেষ্য (noun) জার্মান ভাষায় বড় হাতের অক্ষর দিয়ে শুরু হয় — এমনকি বাক্যের মাঝখানেও। যেমন: **der Tisch** (টেবিল), **die Straße** (রাস্তা)।
 >
-> Handshakes are common in Germany upon first meeting or in professional settings. Close friends don't typically kiss cheeks — they usually hug instead.
+> All nouns in German are capitalized — even in the middle of a sentence. For example: **der Tisch** (table), **die Straße** (street).
 
 ---
 
 ## মনে রাখার টিপস / Memory Tips
 
-- **Guten Morgen** — *morgen* মানে সকাল। সকালে সূর্য উঠলে বলুন!
-- **Guten Abend** — *Abend* মানে সন্ধ্যা। সন্ধ্যায় অন্ধকার হলে বলুন!
-- **Auf Wiedersehen** — আক্ষরিক অর্থ "আবার দেখা পর্যন্ত"। ইংরেজি "until we see again" এর মতো।
-- **Tschüss** — এটি ইংরেজি "Ciao" এর মতো — বন্ধুত্বপূর্ণ এবং অনানুষ্ঠানিক।
+- **W** ইংরেজির "V" এর মতো উচ্চারিত হয়, আর **V** উচ্চারিত হয় "F" এর মতো — এটি গুলিয়ে ফেলবেন না!
+- **J** ইংরেজির "Y" এর মতো শোনায় — যেমন **ja** (হ্যাঁ) উচ্চারিত হয় "yah" এর মতো।
+- উমলাউট (ä, ö, ü) মনে রাখতে দুই বিন্দুকে "ছোট e" হিসেবে কল্পনা করুন — কারণ ঐতিহাসিকভাবে এগুলো "ae", "oe", "ue" থেকে এসেছে।
+- **ß** সবসময় "ss" এর মতো উচ্চারিত হয়, কখনো "b" নয় — যদিও দেখতে সেরকম লাগে।

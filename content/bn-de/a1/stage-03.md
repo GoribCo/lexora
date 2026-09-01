@@ -1,17 +1,17 @@
 ---
 stage: 3
-title: "Farben – Colors"
-titleBn: "রং"
-description: "Learn German color words and use them to describe objects around you."
-duration: "15 min"
-vocabulary: 12
+title: "Zahlen 1–20 – Numbers"
+titleBn: "সংখ্যা ১–২০"
+description: "Count from 1 to 20 in German and use numbers in everyday contexts."
+duration: "20 min"
+vocabulary: 22
 ---
 
 ## পরিচিতি / Introduction
 
-রং বর্ণনা করা জার্মান ভাষার একটি গুরুত্বপূর্ণ অংশ। পোশাক কেনার সময়, দিকনির্দেশ দেওয়ার সময়, বা নতুন জিনিস বর্ণনা করার সময় রঙের নাম জানা অপরিহার্য।
+সংখ্যা শেখা জার্মান ভাষার একটি মৌলিক দিক। দোকানে কেনাকাটা, সময় বলা, ফোন নম্বর দেওয়া — সবকিছুতেই সংখ্যার প্রয়োজন। জার্মান সংখ্যার নিজস্ব ছন্দ আছে যা একবার শিখলে সহজেই মনে থাকে।
 
-Describing colors is an essential part of German. Whether shopping for clothes, giving directions, or describing new things, knowing color names is indispensable.
+Numbers are fundamental to German. From shopping and telling time to giving phone numbers — numbers appear everywhere. German numbers have their own rhythm that, once learned, is easy to remember.
 
 ---
 
@@ -19,108 +19,109 @@ Describing colors is an essential part of German. Whether shopping for clothes, 
 
 | German | Pronunciation | Bengali | English |
 |--------|--------------|---------|---------|
-| rot | ROHT | লাল | red |
-| blau | BLOW | নীল | blue |
-| grün | GROON | সবুজ | green |
-| gelb | GELP | হলুদ | yellow |
-| schwarz | SHVARTS | কালো | black |
-| weiß | VICE | সাদা | white |
-| grau | GROW | ধূসর | grey |
-| braun | BROWN | বাদামি | brown |
-| orange | oh-RAHN-zheh | কমলা | orange |
-| rosa | ROH-zah | গোলাপি | pink |
-| lila | LEE-lah | বেগুনি | purple |
-| türkis | TOOR-kees | ফিরোজা | turquoise |
+| null | NOOL | শূন্য | zero |
+| eins | AYNS | এক | one |
+| zwei | TSVAY | দুই | two |
+| drei | DRAY | তিন | three |
+| vier | FEER | চার | four |
+| fünf | FOONF | পাঁচ | five |
+| sechs | ZEKS | ছয় | six |
+| sieben | ZEE-ben | সাত | seven |
+| acht | AKHT | আট | eight |
+| neun | NOYN | নয় | nine |
+| zehn | TSAYN | দশ | ten |
+| elf | ELF | এগারো | eleven |
+| zwölf | TSVOLF | বারো | twelve |
+| dreizehn | DRY-tsayn | তেরো | thirteen |
+| vierzehn | FEER-tsayn | চোদ্দো | fourteen |
+| fünfzehn | FOONF-tsayn | পনেরো | fifteen |
+| sechzehn | ZEKH-tsayn | ষোলো | sixteen |
+| siebzehn | ZEEP-tsayn | সতেরো | seventeen |
+| achtzehn | AKHT-tsayn | আঠারো | eighteen |
+| neunzehn | NOYN-tsayn | উনিশ | nineteen |
+| zwanzig | TSVAHN-tsig | বিশ | twenty |
+| hundert | HOON-dert | একশো | hundred |
 
 ---
 
-## ব্যাকরণ নোট / Grammar Note
+## প্যাটার্ন / Pattern
 
-জার্মানে, বিশেষণ হিসেবে রঙের নাম ব্যবহার করলে সেগুলো বিশেষ্যের লিঙ্গ ও বিভক্তি অনুসারে পরিবর্তিত হয়। তবে বিশেষ্যের পরে ব্যবহার করলে পরিবর্তন হয় না:
+১৩ থেকে ১৯ পর্যন্ত সংখ্যায় **-zehn** যোগ হয়, যার মানে "দশ"।
 
-In German, colors used as adjectives change form based on the noun's gender and case. But when used after the noun (predicative), they don't change:
+Numbers 13–19 add **-zehn** (meaning "ten"):
 
-- Das Auto ist **rot**. *(গাড়িটি লাল।)* — The car is red.
-- Das **rote** Auto *(লাল গাড়িটি)* — the red car
+- drei + zehn = **dreizehn** (13) — তিন + দশ = তেরো
+- vier + zehn = **vierzehn** (14) — চার + দশ = চোদ্দো
+- fünf + zehn = **fünfzehn** (15) — পাঁচ + দশ = পনেরো
 
-এখন শুধু মৌলিক রূপ শিখুন (আপাতত)।
-For now, just learn the basic form.
+> ব্যতিক্রম: 16 = **sechzehn** (nicht sechszehn), 17 = **siebzehn** (nicht siebenzehn)
 
 ---
 
-## বাক্যে রঙ / Colors in Sentences
+## বাক্যে সংখ্যা / Numbers in Sentences
 
-**পোশাক বর্ণনায় (Describing clothes):**
+**দোকানে (At the shop):**
 
-- Ich trage ein **blaues** Hemd. — আমি একটি নীল শার্ট পরছি। / I'm wearing a blue shirt.
-- Meine Jacke ist **schwarz**. — আমার জ্যাকেটটি কালো। / My jacket is black.
-- Das **rote** Kleid gefällt mir. — লাল পোশাকটি আমার পছন্দ। / I like the red dress.
+- Das kostet **drei** Euro. — এটার দাম তিন ইউরো। / This costs three euros.
+- Ich nehme **zwei** davon. — আমি এগুলোর দুটো নেব। / I'll take two of those.
+- Ich bin **zwanzig** Jahre alt. — আমার বয়স বিশ বছর। / I am twenty years old.
 
-**জিনিস বর্ণনায় (Describing objects):**
+**ফোনে (On the phone):**
 
-- Das Haus ist **weiß**. — বাড়িটি সাদা। / The house is white.
-- Der Himmel ist **blau**. — আকাশ নীল। / The sky is blue.
-- Das Gras ist **grün**. — ঘাস সবুজ। / The grass is green.
+- Meine Nummer ist **null**, **sieben**, **eins**... — আমার নম্বর হলো ০৭১... / My number is 0, 7, 1...
+
+**ঠিকানায় (In addresses):**
+
+- Ich wohne in der **Hauptstraße acht**. — আমি হাউপ্টস্ট্রাসে ৮ নম্বরে থাকি। / I live at Hauptstraße 8.
 
 ---
 
 ## অনুশীলন সংলাপ / Practice Dialogues
 
-### সংলাপ ১ — কেনাকাটায় (Dialogue 1 — Shopping for clothes)
+### সংলাপ ১ — কেনাকাটায় (Dialogue 1 — Shopping)
 
-**Kundin:** Haben Sie diese Bluse auch in **grün**?
-*(এই ব্লাউজটি কি **সবুজ** রঙেও আছে?)*
+**Verkäufer (বিক্রেতা):** Guten Tag! Was möchten Sie?
+*(শুভ দিন! আপনি কী চান?)*
 
-**Verkäuferin:** Ja, wir haben sie in grün, **rot** und **blau**.
-*(হ্যাঁ, আমাদের কাছে সবুজ, **লাল** এবং **নীল** রঙে আছে।)*
+**Kunde (ক্রেতা):** Drei Äpfel, bitte.
+*(তিনটি আপেল, দয়া করে।)*
 
-**Kundin:** Toll! Ich nehme die **grüne**.
-*(দারুণ! আমি **সবুজটি** নেব।)*
+**Verkäufer:** Das macht zwei Euro fünfzig.
+*(সেটা হয় আড়াই ইউরো।)*
 
----
-
-### সংলাপ ২ — হারিয়ে যাওয়া জিনিস খোঁজা (Dialogue 2 — Looking for a lost item)
-
-**Polizist:** Wie sieht Ihr Rucksack aus?
-*(আপনার ব্যাকপ্যাকটি দেখতে কেমন?)*
-
-**Tourist:** Er ist **schwarz** mit einem **roten** Streifen.
-*(এটি **কালো** রঙের এবং একটি **লাল** ডোরা আছে।)*
-
-**Polizist:** Groß oder klein?
-*(বড় না ছোট?)*
-
-**Tourist:** Mittelgroß und aus Nylon.
-*(মাঝারি আকারের এবং নাইলনের তৈরি।)*
+**Kunde:** Hier sind **drei** Euro.
+*(এই নিন তিন ইউরো।)*
 
 ---
 
-## মিশ্র রং / Mixed Colors
+### সংলাপ ২ — পরিচয়ে বয়স (Dialogue 2 — Age in introduction)
 
-কিছু রং তৈরি করুন / Create some colors:
+**Felix:** Wie alt bist du?
+*(তোমার বয়স কত?)*
 
-| Combination | Result | Bengali |
-|-------------|--------|---------|
-| rot + weiß = | **rosa** | গোলাপি |
-| blau + gelb = | **grün** | সবুজ |
-| rot + blau = | **lila/violett** | বেগুনি |
-| schwarz + weiß = | **grau** | ধূসর |
+**Mia:** Ich bin **achtzehn** Jahre alt. Und du?
+*(আমার বয়স আঠারো বছর। তোমার?)*
+
+**Felix:** Ich bin **neunzehn**.
+*(আমার বয়স উনিশ।)*
 
 ---
 
 ## অনুশীলন / Practice
 
-আপনার আশেপাশের জিনিসগুলো জার্মানে বর্ণনা করুন:
-Describe objects around you in German:
+নিচের সংখ্যাগুলো জার্মানে বলুন / Say these numbers in German:
 
-1. মেঝে কি রঙের? → Der Boden ist _______.
-2. আকাশ কি রঙের? → Der Himmel ist _______.
-3. আপনার শার্ট কি রঙের? → Mein Hemd ist _______.
+1. 7 → **sieben**
+2. 12 → **zwölf**
+3. 15 → **fünfzehn**
+4. 18 → **achtzehn**
+5. 3 + 4 = ? → **drei plus vier ist sieben**
+6. 10 − 2 = ? → **zehn minus zwei ist acht**
 
 ---
 
 ## সাংস্কৃতিক নোট / Cultural Note
 
-> জার্মানিতে, **grün** (সবুজ) পরিবেশ সচেতনতার প্রতীক। "Die Grünen" (সবুজ দল) হলো জার্মানির একটি প্রধান রাজনৈতিক দল। জার্মান ট্রাফিক সিগন্যালে সবুজ মানে যাওয়া, লাল মানে থামা — ঠিক বাংলাদেশের মতোই!
+> জার্মানিতে, হাতের আঙুলে গণনা করার সময় বৃদ্ধাঙ্গুলি (thumb) দিয়ে শুরু হয়, তর্জনী (index finger) দিয়ে নয়। এটি বাংলাদেশ ও ভারতের থেকে আলাদা। জার্মান রেস্টুরেন্টে, ওয়েটারকে ডাকার সময় কখনো আঙুল দিয়ে ইশারা করবেন না — বরং হাত তুলুন এবং সরাসরি দৃষ্টি মেলান।
 >
-> In Germany, **grün** (green) symbolizes environmental awareness. "Die Grünen" (The Greens) is a major political party. German traffic signals use green for go and red for stop — just like in Bangladesh!
+> In Germany, counting on fingers starts with the thumb, not the index finger. This differs from Bangladesh and India. In German restaurants, never snap fingers at a waiter — raise your hand and make eye contact instead.
