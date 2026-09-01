@@ -1,135 +1,124 @@
 ---
 stage: 5
-title: "Familie – Family Members"
-titleBn: "পরিবার"
-description: "Learn vocabulary for family members and talk about your family in German."
-duration: "20 min"
-vocabulary: 16
+title: "Wochentage – Days of the Week"
+titleBn: "সপ্তাহের দিনগুলো"
+description: "Learn the days of the week and how to talk about your weekly schedule."
+duration: "15 min"
+vocabulary: 10
 ---
 
 ## পরিচিতি / Introduction
 
-পরিবার সম্পর্কে কথা বলা জার্মান সামাজিক জীবনের একটি গুরুত্বপূর্ণ অংশ। নতুন পরিচিতি হলে, মানুষ প্রায়ই পরিবার সম্পর্কে জিজ্ঞাসা করেন। এই পাঠে আপনি পরিবারের সদস্যদের নাম এবং আপনার পরিবার সম্পর্কে কথা বলার উপায় শিখবেন।
+সপ্তাহের দিনগুলো জানা জার্মান দৈনন্দিন জীবনের জন্য অত্যন্ত গুরুত্বপূর্ণ। অ্যাপয়েন্টমেন্ট, কাজের সময়সূচি, বা সামাজিক পরিকল্পনার জন্য এই শব্দগুলো প্রতিদিন ব্যবহৃত হয়।
 
-Talking about family is an important part of German social life. When meeting new people, conversations often turn to family. In this lesson, you'll learn family member vocabulary and how to talk about your family.
+Knowing the days of the week is essential for daily life in German. Appointments, work schedules, or social plans — these words are used every day.
+
+**গুরুত্বপূর্ণ:** জার্মানিতে সপ্তাহ সোমবার (Montag) দিয়ে শুরু হয়, রবিবার দিয়ে নয়।
+**Important:** In Germany, the week starts on Monday (Montag), not Sunday.
 
 ---
 
 ## শব্দভাণ্ডার / Vocabulary
 
-| German | Pronunciation | Bengali | English |
-|--------|--------------|---------|---------|
-| die Familie | fah-MEE-lee-yeh | পরিবার | family |
-| die Mutter | MOO-ter | মা | mother |
-| der Vater | FAH-ter | বাবা | father |
-| die Eltern (pl.) | EL-tern | বাবা-মা | parents |
-| der Sohn | ZOHN | ছেলে | son |
-| die Tochter | TOKH-ter | মেয়ে | daughter |
-| der Bruder | BROO-der | ভাই | brother |
-| die Schwester | SHVES-ter | বোন | sister |
-| die Geschwister (pl.) | geh-SHVIS-ter | ভাই-বোন | siblings |
-| der Großvater | GROHS-fah-ter | দাদা/নানা | grandfather |
-| die Großmutter | GROHS-moo-ter | দাদি/নানি | grandmother |
-| die Großeltern (pl.) | GROHS-el-tern | দাদা-দাদি/নানা-নানি | grandparents |
-| der Onkel | ON-kel | চাচা/মামা/খালু | uncle |
-| die Tante | TAHN-teh | চাচি/মামি/খালা | aunt |
-| der Cousin | koo-ZAN | চাচাতো/মামাতো ভাই | male cousin |
-| die Cousine | koo-ZEE-neh | চাচাতো/মামাতো বোন | female cousin |
+| German | Pronunciation | Bengali | English | Origin |
+|--------|--------------|---------|---------|--------|
+| Montag | MON-tahk | সোমবার | Monday | Mond (moon) |
+| Dienstag | DEENS-tahk | মঙ্গলবার | Tuesday | Dienst (service) |
+| Mittwoch | MIT-vokh | বুধবার | Wednesday | Mitte (middle) |
+| Donnerstag | DON-ners-tahk | বৃহস্পতিবার | Thursday | Donner (thunder) |
+| Freitag | FRY-tahk | শুক্রবার | Friday | Freya (Norse goddess) |
+| Samstag | ZAHM-stahk | শনিবার | Saturday | Sabbat |
+| Sonntag | ZON-tahk | রবিবার | Sunday | Sonne (sun) |
+| Wochenende | VOH-khen-en-deh | সাপ্তাহিক ছুটি | weekend | |
+| Werktag | VERK-tahk | কর্মদিন | weekday | |
+| heute | HOY-teh | আজ | today | |
 
 ---
 
-## ব্যাকরণ নোট / Grammar Note — Articles
+## দিন বলার নিয়ম / How to Say Days
 
-জার্মানে প্রতিটি বিশেষ্যের একটি নির্দিষ্ট লিঙ্গ আছে। পরিবারের সদস্যদের ক্ষেত্রে লিঙ্গ সাধারণত স্বাভাবিক:
+**am + দিনের নাম = সেই দিনে:**
 
-In German, every noun has a grammatical gender. For family members, gender usually follows natural gender:
+- **am Montag** — সোমবারে / on Monday
+- **am Freitag** — শুক্রবারে / on Friday
+- **am Wochenende** — সাপ্তাহিক ছুটিতে / on the weekend
 
-- **der** = পুংলিঙ্গ (masculine): der Vater, der Sohn, der Bruder
-- **die** = স্ত্রীলিঙ্গ (feminine): die Mutter, die Tochter, die Schwester
-- **die** (plural): die Eltern, die Geschwister, die Großeltern
+**প্রশ্ন করা (Asking about days):**
+
+- **Welcher Tag ist heute?** — আজ কোন দিন? / What day is today?
+- **Heute ist Donnerstag.** — আজ বৃহস্পতিবার। / Today is Thursday.
+- **Was machst du am Samstag?** — তুমি শনিবার কী করবে? / What are you doing on Saturday?
 
 ---
 
-## পরিবার সম্পর্কে বলা / Talking About Your Family
+## সাধারণ প্রকাশভঙ্গি / Common Expressions
 
-### আমার পরিবার (My family)
-
-**Ich habe...** = আমার আছে / I have...
-
-- Ich habe **einen Bruder**. — আমার একজন ভাই আছে। / I have a brother.
-- Ich habe **zwei Schwestern**. — আমার দুজন বোন আছে। / I have two sisters.
-- Ich habe **keine Geschwister**. — আমার কোনো ভাই-বোন নেই। / I have no siblings.
-
-**Mein/Meine...** = আমার... / My...
-
-- **Mein** Vater heißt Ahmed. — আমার বাবার নাম আহমেদ। / My father's name is Ahmed.
-- **Meine** Mutter kommt aus Dhaka. — আমার মা ঢাকা থেকে এসেছেন। / My mother is from Dhaka.
-- **Meine** Großeltern leben in Bangladesh. — আমার দাদা-দাদি বাংলাদেশে থাকেন। / My grandparents live in Bangladesh.
+| German | Bengali | English |
+|--------|---------|---------|
+| heute | আজ | today |
+| morgen | আগামীকাল | tomorrow |
+| gestern | গতকাল | yesterday |
+| übermorgen | পরশু | the day after tomorrow |
+| vorgestern | গতপরশু | the day before yesterday |
+| nächste Woche | আগামী সপ্তাহ | next week |
+| letzte Woche | গত সপ্তাহ | last week |
 
 ---
 
 ## অনুশীলন সংলাপ / Practice Dialogues
 
-### সংলাপ ১ — পরিচয়ে পরিবারের কথা (Dialogue 1 — Family in introductions)
+### সংলাপ ১ — পরিকল্পনা করা (Dialogue 1 — Making plans)
 
-**Hana:** Hast du Geschwister?
-*(তোমার কি ভাই-বোন আছে?)*
+**Sonia:** Was machst du **am Wochenende**?
+*(তুমি **সাপ্তাহিক ছুটিতে** কী করবে?)*
 
-**Tariq:** Ja, ich habe **einen Bruder** und **eine Schwester**. Und du?
-*(হ্যাঁ, আমার একজন ভাই ও একজন বোন আছে। তোমার?)*
+**Peter:** Am **Samstag** gehe ich zum Fußball. **Am Sonntag** bleibe ich zu Hause.
+*(**শনিবার** আমি ফুটবল দেখতে যাব। **রবিবার** আমি বাড়িতে থাকব।)*
 
-**Hana:** Ich habe **zwei Brüder**, aber keine Schwester.
-*(আমার দুজন ভাই আছে, কিন্তু কোনো বোন নেই।)*
+**Sonia:** Toll! Ich gehe **am Freitag** ins Kino. Möchtest du mitkommen?
+*(দারুণ! আমি **শুক্রবার** সিনেমায় যাচ্ছি। তুমি কি আসতে চাও?)*
 
-**Tariq:** Sind deine Eltern auch in Deutschland?
-*(তোমার বাবা-মা কি জার্মানিতেও আছেন?)*
-
-**Hana:** Nein, sie leben noch in Bangladesh. Ich vermisse sie sehr.
-*(না, তারা এখনো বাংলাদেশে আছেন। আমি তাদের খুব মিস করি।)*
+**Peter:** Ja, gerne! Um wie viel Uhr?
+*(হ্যাঁ, অবশ্যই! কটার সময়?)*
 
 ---
 
-### সংলাপ ২ — ছবি দেখানো (Dialogue 2 — Showing photos)
+### সংলাপ ২ — ডাক্তারের অ্যাপয়েন্টমেন্ট (Dialogue 2 — Doctor's appointment)
 
-**Lena:** Wer ist das?
-*(এটি কে?)*
+**Ärztin:** Ich habe **am Mittwoch** einen freien Termin.
+*(আমার কাছে **বুধবারে** একটি ফাঁকা সময় আছে।)*
 
-**Rafiq:** Das ist **mein Vater**. Und das sind **meine Großeltern**.
-*(এটি **আমার বাবা**। আর এরা **আমার দাদা-দাদি।**)*
+**Patient:** **Montag** oder **Dienstag** wäre besser für mich.
+*(**সোমবার** বা **মঙ্গলবার** আমার জন্য ভালো হবে।)*
 
-**Lena:** Und das kleine Kind?
-*(আর এই ছোট শিশুটি?)*
+**Ärztin:** Gut, **am Dienstag** um zehn Uhr?
+*(ঠিক আছে, **মঙ্গলবার** সকাল দশটায়?)*
 
-**Rafiq:** Das ist **meine Cousine** Nadia. Sie ist **fünf** Jahre alt.
-*(এটি **আমার চাচাতো বোন** নাদিয়া। তার বয়স **পাঁচ** বছর।)*
-
----
-
-## পরিবার বর্ণনা করুন / Describe Your Family
-
-নিচের কাঠামো ব্যবহার করে আপনার পরিবার বর্ণনা করুন:
-Use this framework to describe your family:
-
-> Meine Familie ist groß/klein.
-> আমার পরিবার বড়/ছোট।
-> My family is big/small.
->
-> Ich habe _____ Brüder und _____ Schwestern.
-> আমার _____ ভাই এবং _____ বোন আছে।
-> I have _____ brothers and _____ sisters.
->
-> Mein Vater heißt _____ und meine Mutter heißt _____.
-> আমার বাবার নাম _____ এবং মায়ের নাম _____.
-> My father's name is _____ and my mother's name is _____.
+**Patient:** Ja, perfekt. Danke sehr!
+*(হ্যাঁ, একদম পারফেক্ট। অনেক ধন্যবাদ!)*
 
 ---
 
-## সাংস্কৃতিক নোট / Cultural Note
+## জার্মান সাপ্তাহিক রুটিন / Typical German Weekly Routine
 
-> বাংলাদেশী পরিবারে, পরিবারের বড়দের সম্মান করার একটি শক্তিশালী ঐতিহ্য আছে — আপনি হয়তো চাচা, মামা, খালা শব্দগুলো অপরিচিতদের জন্যও ব্যবহার করেন। জার্মানিতে পরিবার সাধারণত ছোট হয় — মাত্র বাবা, মা এবং এক বা দুটি সন্তান। বড় পরিবারের ধারণা তুলনামূলকভাবে কম সাধারণ।
->
-> In Bangladeshi culture, there's a strong tradition of respecting elders — you might use "uncle" or "aunt" even for non-relatives. In Germany, families tend to be smaller — typically just parents and one or two children. Extended family living together is less common.
->
-> জার্মান ঘরে আমন্ত্রণ পেলে সময়মতো আসুন — জার্মানরা সময়ানুবর্তিতাকে সম্মান মনে করেন।
->
-> If invited to a German home, arrive on time — Germans value punctuality highly.
+জার্মান কর্মজীবনে সাধারণ সময়সূচি:
+
+| দিন (Day) | সাধারণ কার্যক্রম (Typical Activity) |
+|----------|--------------------------------------|
+| Montag–Freitag | কাজ/স্কুল (Work/School) |
+| Samstag | কেনাকাটা (Shopping) — দোকান বন্ধ হওয়ার আগে! |
+| Sonntag | বিশ্রাম, পরিবার, প্রকৃতি (Rest, family, nature) |
+
+> জার্মানিতে বেশিরভাগ দোকান রবিবার বন্ধ থাকে! এটি বাংলাদেশের থেকে খুব আলাদা। কেনাকাটার পরিকল্পনা আগে থেকেই করুন।
+> Most shops in Germany are closed on Sundays! Plan your shopping in advance.
+
+---
+
+## অনুশীলন / Practice
+
+শূন্যস্থান পূরণ করুন / Fill in the blanks:
+
+1. Monday = ___________
+2. আজ কোন দিন? → Heute ist ___________.
+3. সাপ্তাহিক ছুটি = das ___________.
+4. Am ___________ gehe ich in die Schule. (I go to school on ___.)

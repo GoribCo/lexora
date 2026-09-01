@@ -1,17 +1,17 @@
 ---
 stage: 2
-title: "Zahlen 1–20 – Numbers"
-titleBn: "সংখ্যা ১–২০"
-description: "Count from 1 to 20 in German and use numbers in everyday contexts."
-duration: "20 min"
-vocabulary: 22
+title: "Grüßen – Greetings"
+titleBn: "শুভেচ্ছা"
+description: "Learn essential German greetings and farewells used in everyday situations."
+duration: "15 min"
+vocabulary: 8
 ---
 
 ## পরিচিতি / Introduction
 
-সংখ্যা শেখা জার্মান ভাষার একটি মৌলিক দিক। দোকানে কেনাকাটা, সময় বলা, ফোন নম্বর দেওয়া — সবকিছুতেই সংখ্যার প্রয়োজন। জার্মান সংখ্যার নিজস্ব ছন্দ আছে যা একবার শিখলে সহজেই মনে থাকে।
+জার্মান ভাষায় শুভেচ্ছা জানানো শেখা হলো প্রথম এবং সবচেয়ে গুরুত্বপূর্ণ পদক্ষেপ। জার্মানরা শুভেচ্ছায় বেশ আনুষ্ঠানিক — বিশেষত অপরিচিত ব্যক্তির সাথে।
 
-Numbers are fundamental to German. From shopping and telling time to giving phone numbers — numbers appear everywhere. German numbers have their own rhythm that, once learned, is easy to remember.
+Learning greetings in German is the first and most important step. Germans tend to be quite formal in greetings — especially with strangers. Using the right greeting at the right time shows cultural awareness and earns respect.
 
 ---
 
@@ -19,109 +19,94 @@ Numbers are fundamental to German. From shopping and telling time to giving phon
 
 | German | Pronunciation | Bengali | English |
 |--------|--------------|---------|---------|
-| null | NOOL | শূন্য | zero |
-| eins | AYNS | এক | one |
-| zwei | TSVAY | দুই | two |
-| drei | DRAY | তিন | three |
-| vier | FEER | চার | four |
-| fünf | FOONF | পাঁচ | five |
-| sechs | ZEKS | ছয় | six |
-| sieben | ZEE-ben | সাত | seven |
-| acht | AKHT | আট | eight |
-| neun | NOYN | নয় | nine |
-| zehn | TSAYN | দশ | ten |
-| elf | ELF | এগারো | eleven |
-| zwölf | TSVOLF | বারো | twelve |
-| dreizehn | DRY-tsayn | তেরো | thirteen |
-| vierzehn | FEER-tsayn | চোদ্দো | fourteen |
-| fünfzehn | FOONF-tsayn | পনেরো | fifteen |
-| sechzehn | ZEKH-tsayn | ষোলো | sixteen |
-| siebzehn | ZEEP-tsayn | সতেরো | seventeen |
-| achtzehn | AKHT-tsayn | আঠারো | eighteen |
-| neunzehn | NOYN-tsayn | উনিশ | nineteen |
-| zwanzig | TSVAHN-tsig | বিশ | twenty |
-| hundert | HOON-dert | একশো | hundred |
+| Hallo | HA-lo | হ্যালো | Hello |
+| Guten Morgen | GOO-ten MOR-gen | শুভ সকাল | Good morning |
+| Guten Tag | GOO-ten TAHK | শুভ দিন | Good day / Hello |
+| Guten Abend | GOO-ten AH-bent | শুভ সন্ধ্যা | Good evening |
+| Gute Nacht | GOO-teh NAKHT | শুভ রাত্রি | Good night |
+| Auf Wiedersehen | owf VEE-der-zay-en | বিদায় | Goodbye (formal) |
+| Tschüss | CHOOS | আলবিদা | Bye (informal) |
+| Bis bald | bis BALT | শীঘ্রই দেখা হবে | See you soon |
 
 ---
 
-## প্যাটার্ন / Pattern
+## সাধারণ বাক্যাংশ / Common Phrases
 
-১৩ থেকে ১৯ পর্যন্ত সংখ্যায় **-zehn** যোগ হয়, যার মানে "দশ"।
+### আনুষ্ঠানিক শুভেচ্ছা (Formal Greetings)
 
-Numbers 13–19 add **-zehn** (meaning "ten"):
+**Wie geht es Ihnen?** *(VEE gayt es EE-nen)*
+আপনি কেমন আছেন? / How are you? (formal)
 
-- drei + zehn = **dreizehn** (13) — তিন + দশ = তেরো
-- vier + zehn = **vierzehn** (14) — চার + দশ = চোদ্দো
-- fünf + zehn = **fünfzehn** (15) — পাঁচ + দশ = পনেরো
+**Es geht mir gut, danke.** *(es gayt meer goot, DANK-eh)*
+আমি ভালো আছি, ধন্যবাদ। / I am well, thank you.
 
-> ব্যতিক্রম: 16 = **sechzehn** (nicht sechszehn), 17 = **siebzehn** (nicht siebenzehn)
+**Sehr gut, danke. Und Ihnen?** *(zayr goot, DANK-eh. oont EE-nen?)*
+খুব ভালো, ধন্যবাদ। আর আপনি? / Very well, thank you. And you?
 
----
+### অনানুষ্ঠানিক শুভেচ্ছা (Informal Greetings)
 
-## বাক্যে সংখ্যা / Numbers in Sentences
+**Wie geht's?** *(VEE gayts?)*
+কেমন আছ? / How's it going? (informal)
 
-**দোকানে (At the shop):**
+**Gut, und dir?** *(goot, oont deer?)*
+ভালো, তুমি কেমন? / Good, and you? (informal)
 
-- Das kostet **drei** Euro. — এটার দাম তিন ইউরো। / This costs three euros.
-- Ich nehme **zwei** davon. — আমি এগুলোর দুটো নেব। / I'll take two of those.
-- Ich bin **zwanzig** Jahre alt. — আমার বয়স বিশ বছর। / I am twenty years old.
-
-**ফোনে (On the phone):**
-
-- Meine Nummer ist **null**, **sieben**, **eins**... — আমার নম্বর হলো ০৭১... / My number is 0, 7, 1...
-
-**ঠিকানায় (In addresses):**
-
-- Ich wohne in der **Hauptstraße acht**. — আমি হাউপ্টস্ট্রাসে ৮ নম্বরে থাকি। / I live at Hauptstraße 8.
+**Na, alles klar?** *(nah, AL-es klar?)*
+সব ঠিকঠাক? / Everything okay? (very casual)
 
 ---
 
 ## অনুশীলন সংলাপ / Practice Dialogues
 
-### সংলাপ ১ — কেনাকাটায় (Dialogue 1 — Shopping)
+### সংলাপ ১ — অফিসে (Dialogue 1 — At the office)
 
-**Verkäufer (বিক্রেতা):** Guten Tag! Was möchten Sie?
-*(শুভ দিন! আপনি কী চান?)*
+**Anna:** Guten Morgen, Herr Müller!
+*(শুভ সকাল, মুলার সাহেব!)*
 
-**Kunde (ক্রেতা):** Drei Äpfel, bitte.
-*(তিনটি আপেল, দয়া করে।)*
+**Herr Müller:** Guten Morgen, Frau Schmidt! Wie geht es Ihnen?
+*(শুভ সকাল, শ্মিট ম্যাডাম! আপনি কেমন আছেন?)*
 
-**Verkäufer:** Das macht zwei Euro fünfzig.
-*(সেটা হয় আড়াই ইউরো।)*
+**Anna:** Es geht mir gut, danke. Und Ihnen?
+*(আমি ভালো আছি, ধন্যবাদ। আর আপনি?)*
 
-**Kunde:** Hier sind **drei** Euro.
-*(এই নিন তিন ইউরো।)*
+**Herr Müller:** Auch gut, danke. Auf Wiedersehen!
+*(আমিও ভালো, ধন্যবাদ। বিদায়!)*
 
----
-
-### সংলাপ ২ — পরিচয়ে বয়স (Dialogue 2 — Age in introduction)
-
-**Felix:** Wie alt bist du?
-*(তোমার বয়স কত?)*
-
-**Mia:** Ich bin **achtzehn** Jahre alt. Und du?
-*(আমার বয়স আঠারো বছর। তোমার?)*
-
-**Felix:** Ich bin **neunzehn**.
-*(আমার বয়স উনিশ।)*
+**Anna:** Auf Wiedersehen!
+*(বিদায়!)*
 
 ---
 
-## অনুশীলন / Practice
+### সংলাপ ২ — বন্ধুদের মধ্যে (Dialogue 2 — Between friends)
 
-নিচের সংখ্যাগুলো জার্মানে বলুন / Say these numbers in German:
+**Leila:** Hey, Tschüss!
+*(হেই, আলবিদা!)*
 
-1. 7 → **sieben**
-2. 12 → **zwölf**
-3. 15 → **fünfzehn**
-4. 18 → **achtzehn**
-5. 3 + 4 = ? → **drei plus vier ist sieben**
-6. 10 − 2 = ? → **zehn minus zwei ist acht**
+**Tom:** Tschüss! Bis bald!
+*(আলবিদা! শীঘ্রই দেখা হবে!)*
+
+**Leila:** Ja, bis morgen!
+*(হ্যাঁ, আগামীকাল দেখা হবে!)*
 
 ---
 
 ## সাংস্কৃতিক নোট / Cultural Note
 
-> জার্মানিতে, হাতের আঙুলে গণনা করার সময় বৃদ্ধাঙ্গুলি (thumb) দিয়ে শুরু হয়, তর্জনী (index finger) দিয়ে নয়। এটি বাংলাদেশ ও ভারতের থেকে আলাদা। জার্মান রেস্টুরেন্টে, ওয়েটারকে ডাকার সময় কখনো আঙুল দিয়ে ইশারা করবেন না — বরং হাত তুলুন এবং সরাসরি দৃষ্টি মেলান।
+> **জার্মান শুভেচ্ছার শিষ্টাচার**
 >
-> In Germany, counting on fingers starts with the thumb, not the index finger. This differs from Bangladesh and India. In German restaurants, never snap fingers at a waiter — raise your hand and make eye contact instead.
+> জার্মানিতে, আনুষ্ঠানিক পরিস্থিতিতে "Guten Tag" সবচেয়ে সাধারণ শুভেচ্ছা। "Hallo" বন্ধু এবং পরিচিতদের জন্য ব্যবহৃত হয়। দক্ষিণ জার্মানিতে (বাভারিয়া), "Servus" এবং "Grüß Gott" সাধারণত ব্যবহৃত হয়।
+>
+> In Germany, "Guten Tag" is the most common greeting in formal situations. "Hallo" is used for friends and acquaintances. In southern Germany (Bavaria), "Servus" and "Grüß Gott" are commonly used instead.
+>
+> হ্যান্ডশেক করা জার্মানিতে প্রথম সাক্ষাতে বা পেশাদার পরিবেশে সাধারণ। ঘনিষ্ঠ বন্ধুরা গালে চুমু দেয় না — তারা সাধারণত আলিঙ্গন করে।
+>
+> Handshakes are common in Germany upon first meeting or in professional settings. Close friends don't typically kiss cheeks — they usually hug instead.
+
+---
+
+## মনে রাখার টিপস / Memory Tips
+
+- **Guten Morgen** — *morgen* মানে সকাল। সকালে সূর্য উঠলে বলুন!
+- **Guten Abend** — *Abend* মানে সন্ধ্যা। সন্ধ্যায় অন্ধকার হলে বলুন!
+- **Auf Wiedersehen** — আক্ষরিক অর্থ "আবার দেখা পর্যন্ত"। ইংরেজি "until we see again" এর মতো।
+- **Tschüss** — এটি ইংরেজি "Ciao" এর মতো — বন্ধুত্বপূর্ণ এবং অনানুষ্ঠানিক।

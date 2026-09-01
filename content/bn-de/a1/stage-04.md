@@ -1,124 +1,126 @@
 ---
 stage: 4
-title: "Wochentage – Days of the Week"
-titleBn: "সপ্তাহের দিনগুলো"
-description: "Learn the days of the week and how to talk about your weekly schedule."
+title: "Farben – Colors"
+titleBn: "রং"
+description: "Learn German color words and use them to describe objects around you."
 duration: "15 min"
-vocabulary: 10
+vocabulary: 12
 ---
 
 ## পরিচিতি / Introduction
 
-সপ্তাহের দিনগুলো জানা জার্মান দৈনন্দিন জীবনের জন্য অত্যন্ত গুরুত্বপূর্ণ। অ্যাপয়েন্টমেন্ট, কাজের সময়সূচি, বা সামাজিক পরিকল্পনার জন্য এই শব্দগুলো প্রতিদিন ব্যবহৃত হয়।
+রং বর্ণনা করা জার্মান ভাষার একটি গুরুত্বপূর্ণ অংশ। পোশাক কেনার সময়, দিকনির্দেশ দেওয়ার সময়, বা নতুন জিনিস বর্ণনা করার সময় রঙের নাম জানা অপরিহার্য।
 
-Knowing the days of the week is essential for daily life in German. Appointments, work schedules, or social plans — these words are used every day.
-
-**গুরুত্বপূর্ণ:** জার্মানিতে সপ্তাহ সোমবার (Montag) দিয়ে শুরু হয়, রবিবার দিয়ে নয়।
-**Important:** In Germany, the week starts on Monday (Montag), not Sunday.
+Describing colors is an essential part of German. Whether shopping for clothes, giving directions, or describing new things, knowing color names is indispensable.
 
 ---
 
 ## শব্দভাণ্ডার / Vocabulary
 
-| German | Pronunciation | Bengali | English | Origin |
-|--------|--------------|---------|---------|--------|
-| Montag | MON-tahk | সোমবার | Monday | Mond (moon) |
-| Dienstag | DEENS-tahk | মঙ্গলবার | Tuesday | Dienst (service) |
-| Mittwoch | MIT-vokh | বুধবার | Wednesday | Mitte (middle) |
-| Donnerstag | DON-ners-tahk | বৃহস্পতিবার | Thursday | Donner (thunder) |
-| Freitag | FRY-tahk | শুক্রবার | Friday | Freya (Norse goddess) |
-| Samstag | ZAHM-stahk | শনিবার | Saturday | Sabbat |
-| Sonntag | ZON-tahk | রবিবার | Sunday | Sonne (sun) |
-| Wochenende | VOH-khen-en-deh | সাপ্তাহিক ছুটি | weekend | |
-| Werktag | VERK-tahk | কর্মদিন | weekday | |
-| heute | HOY-teh | আজ | today | |
+| German | Pronunciation | Bengali | English |
+|--------|--------------|---------|---------|
+| rot | ROHT | লাল | red |
+| blau | BLOW | নীল | blue |
+| grün | GROON | সবুজ | green |
+| gelb | GELP | হলুদ | yellow |
+| schwarz | SHVARTS | কালো | black |
+| weiß | VICE | সাদা | white |
+| grau | GROW | ধূসর | grey |
+| braun | BROWN | বাদামি | brown |
+| orange | oh-RAHN-zheh | কমলা | orange |
+| rosa | ROH-zah | গোলাপি | pink |
+| lila | LEE-lah | বেগুনি | purple |
+| türkis | TOOR-kees | ফিরোজা | turquoise |
 
 ---
 
-## দিন বলার নিয়ম / How to Say Days
+## ব্যাকরণ নোট / Grammar Note
 
-**am + দিনের নাম = সেই দিনে:**
+জার্মানে, বিশেষণ হিসেবে রঙের নাম ব্যবহার করলে সেগুলো বিশেষ্যের লিঙ্গ ও বিভক্তি অনুসারে পরিবর্তিত হয়। তবে বিশেষ্যের পরে ব্যবহার করলে পরিবর্তন হয় না:
 
-- **am Montag** — সোমবারে / on Monday
-- **am Freitag** — শুক্রবারে / on Friday
-- **am Wochenende** — সাপ্তাহিক ছুটিতে / on the weekend
+In German, colors used as adjectives change form based on the noun's gender and case. But when used after the noun (predicative), they don't change:
 
-**প্রশ্ন করা (Asking about days):**
+- Das Auto ist **rot**. *(গাড়িটি লাল।)* — The car is red.
+- Das **rote** Auto *(লাল গাড়িটি)* — the red car
 
-- **Welcher Tag ist heute?** — আজ কোন দিন? / What day is today?
-- **Heute ist Donnerstag.** — আজ বৃহস্পতিবার। / Today is Thursday.
-- **Was machst du am Samstag?** — তুমি শনিবার কী করবে? / What are you doing on Saturday?
+এখন শুধু মৌলিক রূপ শিখুন (আপাতত)।
+For now, just learn the basic form.
 
 ---
 
-## সাধারণ প্রকাশভঙ্গি / Common Expressions
+## বাক্যে রঙ / Colors in Sentences
 
-| German | Bengali | English |
-|--------|---------|---------|
-| heute | আজ | today |
-| morgen | আগামীকাল | tomorrow |
-| gestern | গতকাল | yesterday |
-| übermorgen | পরশু | the day after tomorrow |
-| vorgestern | গতপরশু | the day before yesterday |
-| nächste Woche | আগামী সপ্তাহ | next week |
-| letzte Woche | গত সপ্তাহ | last week |
+**পোশাক বর্ণনায় (Describing clothes):**
+
+- Ich trage ein **blaues** Hemd. — আমি একটি নীল শার্ট পরছি। / I'm wearing a blue shirt.
+- Meine Jacke ist **schwarz**. — আমার জ্যাকেটটি কালো। / My jacket is black.
+- Das **rote** Kleid gefällt mir. — লাল পোশাকটি আমার পছন্দ। / I like the red dress.
+
+**জিনিস বর্ণনায় (Describing objects):**
+
+- Das Haus ist **weiß**. — বাড়িটি সাদা। / The house is white.
+- Der Himmel ist **blau**. — আকাশ নীল। / The sky is blue.
+- Das Gras ist **grün**. — ঘাস সবুজ। / The grass is green.
 
 ---
 
 ## অনুশীলন সংলাপ / Practice Dialogues
 
-### সংলাপ ১ — পরিকল্পনা করা (Dialogue 1 — Making plans)
+### সংলাপ ১ — কেনাকাটায় (Dialogue 1 — Shopping for clothes)
 
-**Sonia:** Was machst du **am Wochenende**?
-*(তুমি **সাপ্তাহিক ছুটিতে** কী করবে?)*
+**Kundin:** Haben Sie diese Bluse auch in **grün**?
+*(এই ব্লাউজটি কি **সবুজ** রঙেও আছে?)*
 
-**Peter:** Am **Samstag** gehe ich zum Fußball. **Am Sonntag** bleibe ich zu Hause.
-*(**শনিবার** আমি ফুটবল দেখতে যাব। **রবিবার** আমি বাড়িতে থাকব।)*
+**Verkäuferin:** Ja, wir haben sie in grün, **rot** und **blau**.
+*(হ্যাঁ, আমাদের কাছে সবুজ, **লাল** এবং **নীল** রঙে আছে।)*
 
-**Sonia:** Toll! Ich gehe **am Freitag** ins Kino. Möchtest du mitkommen?
-*(দারুণ! আমি **শুক্রবার** সিনেমায় যাচ্ছি। তুমি কি আসতে চাও?)*
-
-**Peter:** Ja, gerne! Um wie viel Uhr?
-*(হ্যাঁ, অবশ্যই! কটার সময়?)*
+**Kundin:** Toll! Ich nehme die **grüne**.
+*(দারুণ! আমি **সবুজটি** নেব।)*
 
 ---
 
-### সংলাপ ২ — ডাক্তারের অ্যাপয়েন্টমেন্ট (Dialogue 2 — Doctor's appointment)
+### সংলাপ ২ — হারিয়ে যাওয়া জিনিস খোঁজা (Dialogue 2 — Looking for a lost item)
 
-**Ärztin:** Ich habe **am Mittwoch** einen freien Termin.
-*(আমার কাছে **বুধবারে** একটি ফাঁকা সময় আছে।)*
+**Polizist:** Wie sieht Ihr Rucksack aus?
+*(আপনার ব্যাকপ্যাকটি দেখতে কেমন?)*
 
-**Patient:** **Montag** oder **Dienstag** wäre besser für mich.
-*(**সোমবার** বা **মঙ্গলবার** আমার জন্য ভালো হবে।)*
+**Tourist:** Er ist **schwarz** mit einem **roten** Streifen.
+*(এটি **কালো** রঙের এবং একটি **লাল** ডোরা আছে।)*
 
-**Ärztin:** Gut, **am Dienstag** um zehn Uhr?
-*(ঠিক আছে, **মঙ্গলবার** সকাল দশটায়?)*
+**Polizist:** Groß oder klein?
+*(বড় না ছোট?)*
 
-**Patient:** Ja, perfekt. Danke sehr!
-*(হ্যাঁ, একদম পারফেক্ট। অনেক ধন্যবাদ!)*
+**Tourist:** Mittelgroß und aus Nylon.
+*(মাঝারি আকারের এবং নাইলনের তৈরি।)*
 
 ---
 
-## জার্মান সাপ্তাহিক রুটিন / Typical German Weekly Routine
+## মিশ্র রং / Mixed Colors
 
-জার্মান কর্মজীবনে সাধারণ সময়সূচি:
+কিছু রং তৈরি করুন / Create some colors:
 
-| দিন (Day) | সাধারণ কার্যক্রম (Typical Activity) |
-|----------|--------------------------------------|
-| Montag–Freitag | কাজ/স্কুল (Work/School) |
-| Samstag | কেনাকাটা (Shopping) — দোকান বন্ধ হওয়ার আগে! |
-| Sonntag | বিশ্রাম, পরিবার, প্রকৃতি (Rest, family, nature) |
-
-> জার্মানিতে বেশিরভাগ দোকান রবিবার বন্ধ থাকে! এটি বাংলাদেশের থেকে খুব আলাদা। কেনাকাটার পরিকল্পনা আগে থেকেই করুন।
-> Most shops in Germany are closed on Sundays! Plan your shopping in advance.
+| Combination | Result | Bengali |
+|-------------|--------|---------|
+| rot + weiß = | **rosa** | গোলাপি |
+| blau + gelb = | **grün** | সবুজ |
+| rot + blau = | **lila/violett** | বেগুনি |
+| schwarz + weiß = | **grau** | ধূসর |
 
 ---
 
 ## অনুশীলন / Practice
 
-শূন্যস্থান পূরণ করুন / Fill in the blanks:
+আপনার আশেপাশের জিনিসগুলো জার্মানে বর্ণনা করুন:
+Describe objects around you in German:
 
-1. Monday = ___________
-2. আজ কোন দিন? → Heute ist ___________.
-3. সাপ্তাহিক ছুটি = das ___________.
-4. Am ___________ gehe ich in die Schule. (I go to school on ___.)
+1. মেঝে কি রঙের? → Der Boden ist _______.
+2. আকাশ কি রঙের? → Der Himmel ist _______.
+3. আপনার শার্ট কি রঙের? → Mein Hemd ist _______.
+
+---
+
+## সাংস্কৃতিক নোট / Cultural Note
+
+> জার্মানিতে, **grün** (সবুজ) পরিবেশ সচেতনতার প্রতীক। "Die Grünen" (সবুজ দল) হলো জার্মানির একটি প্রধান রাজনৈতিক দল। জার্মান ট্রাফিক সিগন্যালে সবুজ মানে যাওয়া, লাল মানে থামা — ঠিক বাংলাদেশের মতোই!
+>
+> In Germany, **grün** (green) symbolizes environmental awareness. "Die Grünen" (The Greens) is a major political party. German traffic signals use green for go and red for stop — just like in Bangladesh!
