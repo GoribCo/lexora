@@ -1,124 +1,137 @@
 ---
 stage: 5
-title: "Wochentage – Days of the Week"
-titleBn: "সপ্তাহের দিনগুলো"
-description: "Learn the days of the week and how to talk about your weekly schedule."
-duration: "15 min"
-vocabulary: 10
+title: "Familie – Family"
+titleBn: "পরিবার"
+description: "Learn family vocabulary, possessive articles, and the verb haben to talk about your family."
+duration: "25 min"
+vocabulary: 15
 ---
 
 ## পরিচিতি / Introduction
 
-সপ্তাহের দিনগুলো জানা জার্মান দৈনন্দিন জীবনের জন্য অত্যন্ত গুরুত্বপূর্ণ। অ্যাপয়েন্টমেন্ট, কাজের সময়সূচি, বা সামাজিক পরিকল্পনার জন্য এই শব্দগুলো প্রতিদিন ব্যবহৃত হয়।
+পরিবার সম্পর্কে কথা বলা জার্মান সামাজিক জীবনের একটি গুরুত্বপূর্ণ অংশ। এই পাঠে আপনি পরিবারের সদস্যদের নাম, "আমার/তোমার" বোঝানোর জন্য possessive শব্দ (mein, dein, Ihr), এবং **haben** (থাকা) ক্রিয়ার রূপ শিখবেন।
 
-Knowing the days of the week is essential for daily life in German. Appointments, work schedules, or social plans — these words are used every day.
-
-**গুরুত্বপূর্ণ:** জার্মানিতে সপ্তাহ সোমবার (Montag) দিয়ে শুরু হয়, রবিবার দিয়ে নয়।
-**Important:** In Germany, the week starts on Monday (Montag), not Sunday.
+Talking about family is an important part of German social life. In this lesson, you'll learn family member vocabulary, possessive articles (mein, dein, Ihr = my, your, your-formal), and the verb **haben** (to have).
 
 ---
 
 ## শব্দভাণ্ডার / Vocabulary
 
-| German | Pronunciation | Bengali | English | Origin |
-|--------|--------------|---------|---------|--------|
-| Montag | MON-tahk | সোমবার | Monday | Mond (moon) |
-| Dienstag | DEENS-tahk | মঙ্গলবার | Tuesday | Dienst (service) |
-| Mittwoch | MIT-vokh | বুধবার | Wednesday | Mitte (middle) |
-| Donnerstag | DON-ners-tahk | বৃহস্পতিবার | Thursday | Donner (thunder) |
-| Freitag | FRY-tahk | শুক্রবার | Friday | Freya (Norse goddess) |
-| Samstag | ZAHM-stahk | শনিবার | Saturday | Sabbat |
-| Sonntag | ZON-tahk | রবিবার | Sunday | Sonne (sun) |
-| Wochenende | VOH-khen-en-deh | সাপ্তাহিক ছুটি | weekend | |
-| Werktag | VERK-tahk | কর্মদিন | weekday | |
-| heute | HOY-teh | আজ | today | |
+| German | Pronunciation | Bengali | English |
+|--------|--------------|---------|---------|
+| die Familie | fah-MEE-lee-yeh | পরিবার | family |
+| die Mutter | MOO-ter | মা | mother |
+| der Vater | FAH-ter | বাবা | father |
+| die Eltern (pl.) | EL-tern | বাবা-মা | parents |
+| der Sohn | ZOHN | ছেলে | son |
+| die Tochter | TOKH-ter | মেয়ে | daughter |
+| der Bruder | BROO-der | ভাই | brother |
+| die Schwester | SHVES-ter | বোন | sister |
+| die Geschwister (pl.) | geh-SHVIS-ter | ভাই-বোন | siblings |
+| der Großvater | GROHS-fah-ter | দাদা/নানা | grandfather |
+| die Großmutter | GROHS-moo-ter | দাদি/নানি | grandmother |
+| der Onkel | ON-kel | চাচা/মামা/খালু | uncle |
+| die Tante | TAHN-teh | চাচি/মামি/খালা | aunt |
+| verheiratet | fair-HY-rah-tet | বিবাহিত | married |
+| ledig | LAY-dikh | অবিবাহিত | single |
 
 ---
 
-## দিন বলার নিয়ম / How to Say Days
+## ব্যাকরণ নোট / Grammar Note — Possessives and *haben*
 
-**am + দিনের নাম = সেই দিনে:**
+**mein/dein/Ihr** ইত্যাদি নির্দিষ্ট বিশেষ্যের লিঙ্গ অনুসারে রূপ বদলায় (der/das শব্দে কোনো এন্ডিং নেই, die শব্দে -e):
 
-- **am Montag** — সোমবারে / on Monday
-- **am Freitag** — শুক্রবারে / on Friday
-- **am Wochenende** — সাপ্তাহিক ছুটিতে / on the weekend
+Possessives change form based on the noun's gender (no ending before der/das nouns, **-e** before die nouns):
 
-**প্রশ্ন করা (Asking about days):**
+| Person | + der/das noun | + die noun |
+|--------|-----------------|------------|
+| আমার (my) | mein Vater | mein**e** Mutter |
+| তোমার (your, informal) | dein Vater | dein**e** Mutter |
+| আপনার (your, formal) | Ihr Vater | Ihr**e** Mutter |
+| তার-পুরুষ (his) | sein Vater | sein**e** Mutter |
+| তার-নারী (her) | ihr Vater | ihr**e** Mutter |
 
-- **Welcher Tag ist heute?** — আজ কোন দিন? / What day is today?
-- **Heute ist Donnerstag.** — আজ বৃহস্পতিবার। / Today is Thursday.
-- **Was machst du am Samstag?** — তুমি শনিবার কী করবে? / What are you doing on Saturday?
+**haben** (থাকা / to have) — একটি অত্যন্ত গুরুত্বপূর্ণ অনিয়মিত ক্রিয়া:
+
+**haben** (to have) — a very important irregular verb:
+
+| Pronoun | haben |
+|---------|-------|
+| ich | habe |
+| du | hast |
+| er/sie/es | hat |
+| wir | haben |
+| ihr | habt |
+| sie/Sie | haben |
 
 ---
 
-## সাধারণ প্রকাশভঙ্গি / Common Expressions
+## পরিবার সম্পর্কে বলা / Talking About Your Family
 
-| German | Bengali | English |
-|--------|---------|---------|
-| heute | আজ | today |
-| morgen | আগামীকাল | tomorrow |
-| gestern | গতকাল | yesterday |
-| übermorgen | পরশু | the day after tomorrow |
-| vorgestern | গতপরশু | the day before yesterday |
-| nächste Woche | আগামী সপ্তাহ | next week |
-| letzte Woche | গত সপ্তাহ | last week |
+- Ich **habe einen** Bruder. — আমার একজন ভাই আছে। / I have a brother.
+- Ich **habe zwei** Schwestern. — আমার দুজন বোন আছে। / I have two sisters.
+- Ich **habe keine** Geschwister. — আমার কোনো ভাই-বোন নেই। / I have no siblings.
+- **Mein** Vater heißt Ahmed. — আমার বাবার নাম আহমেদ।
+- **Meine** Mutter ist Lehrerin. — আমার মা শিক্ষিকা।
+- **Meine** Eltern sind verheiratet. — আমার বাবা-মা বিবাহিত।
 
 ---
 
 ## অনুশীলন সংলাপ / Practice Dialogues
 
-### সংলাপ ১ — পরিকল্পনা করা (Dialogue 1 — Making plans)
+### সংলাপ ১ — পরিচয়ে পরিবারের কথা (Dialogue 1 — Family in introductions)
 
-**Sonia:** Was machst du **am Wochenende**?
-*(তুমি **সাপ্তাহিক ছুটিতে** কী করবে?)*
+**Hana:** Hast du Geschwister?
+*(তোমার কি ভাই-বোন আছে?)*
 
-**Peter:** Am **Samstag** gehe ich zum Fußball. **Am Sonntag** bleibe ich zu Hause.
-*(**শনিবার** আমি ফুটবল দেখতে যাব। **রবিবার** আমি বাড়িতে থাকব।)*
+**Tariq:** Ja, ich habe einen Bruder und eine Schwester. Und du?
+*(হ্যাঁ, আমার একজন ভাই ও একজন বোন আছে। তোমার?)*
 
-**Sonia:** Toll! Ich gehe **am Freitag** ins Kino. Möchtest du mitkommen?
-*(দারুণ! আমি **শুক্রবার** সিনেমায় যাচ্ছি। তুমি কি আসতে চাও?)*
+**Hana:** Ich habe zwei Brüder, aber keine Schwester. Sind deine Eltern auch in Deutschland?
+*(আমার দুজন ভাই আছে, কিন্তু কোনো বোন নেই। তোমার বাবা-মা কি জার্মানিতেও আছেন?)*
 
-**Peter:** Ja, gerne! Um wie viel Uhr?
-*(হ্যাঁ, অবশ্যই! কটার সময়?)*
-
----
-
-### সংলাপ ২ — ডাক্তারের অ্যাপয়েন্টমেন্ট (Dialogue 2 — Doctor's appointment)
-
-**Ärztin:** Ich habe **am Mittwoch** einen freien Termin.
-*(আমার কাছে **বুধবারে** একটি ফাঁকা সময় আছে।)*
-
-**Patient:** **Montag** oder **Dienstag** wäre besser für mich.
-*(**সোমবার** বা **মঙ্গলবার** আমার জন্য ভালো হবে।)*
-
-**Ärztin:** Gut, **am Dienstag** um zehn Uhr?
-*(ঠিক আছে, **মঙ্গলবার** সকাল দশটায়?)*
-
-**Patient:** Ja, perfekt. Danke sehr!
-*(হ্যাঁ, একদম পারফেক্ট। অনেক ধন্যবাদ!)*
+**Tariq:** Nein, sie leben noch in Bangladesch. Ich vermisse sie sehr.
+*(না, তারা এখনো বাংলাদেশে আছেন। আমি তাদের খুব মিস করি।)*
 
 ---
 
-## জার্মান সাপ্তাহিক রুটিন / Typical German Weekly Routine
+### সংলাপ ২ — ছবি দেখানো (Dialogue 2 — Showing photos)
 
-জার্মান কর্মজীবনে সাধারণ সময়সূচি:
+**Lena:** Wer ist das?
+*(এটি কে?)*
 
-| দিন (Day) | সাধারণ কার্যক্রম (Typical Activity) |
-|----------|--------------------------------------|
-| Montag–Freitag | কাজ/স্কুল (Work/School) |
-| Samstag | কেনাকাটা (Shopping) — দোকান বন্ধ হওয়ার আগে! |
-| Sonntag | বিশ্রাম, পরিবার, প্রকৃতি (Rest, family, nature) |
+**Rafiq:** Das ist mein Vater. Und das ist meine Großmutter.
+*(এটি আমার বাবা। আর এটি আমার দাদি।)*
 
-> জার্মানিতে বেশিরভাগ দোকান রবিবার বন্ধ থাকে! এটি বাংলাদেশের থেকে খুব আলাদা। কেনাকাটার পরিকল্পনা আগে থেকেই করুন।
-> Most shops in Germany are closed on Sundays! Plan your shopping in advance.
+**Lena:** Ist deine Mutter verheiratet mit ihm?
+*(তোমার মা কি তার সাথে বিবাহিত?)*
+
+**Rafiq:** Ja, seit zwanzig Jahren.
+*(হ্যাঁ, বিশ বছর ধরে।)*
 
 ---
 
 ## অনুশীলন / Practice
 
-শূন্যস্থান পূরণ করুন / Fill in the blanks:
+সঠিক possessive এবং *haben* রূপ বসান / Fill in the correct possessive and *haben* form:
 
-1. Monday = ___________
-2. আজ কোন দিন? → Heute ist ___________.
-3. সাপ্তাহিক ছুটি = das ___________.
-4. Am ___________ gehe ich in die Schule. (I go to school on ___.)
+1. Ich ___________ (haben) einen Bruder.
+2. ___________ (mein/meine) Mutter heißt Rina.
+3. Du ___________ (haben) zwei Schwestern.
+4. ___________ (Ihr/Ihre) Vater ist Lehrer. (formal "your")
+
+---
+
+## সাংস্কৃতিক নোট / Cultural Note
+
+> বাংলাদেশী পরিবারে, বড়দের সম্মান করার একটি শক্তিশালী ঐতিহ্য আছে — আপনি হয়তো চাচা, মামা, খালা শব্দগুলো অপরিচিতদের জন্যও ব্যবহার করেন। জার্মানিতে পরিবার সাধারণত ছোট হয় — মাত্র বাবা, মা এবং এক বা দুটি সন্তান।
+>
+> In Bangladeshi culture, there's a strong tradition of respecting elders — you might use "uncle" or "aunt" even for non-relatives. In Germany, families tend to be smaller — typically just parents and one or two children.
+
+---
+
+## মনে রাখার টিপস / Memory Tips
+
+- **der** শব্দের আগে possessive-এ কোনো এন্ডিং নেই, **die** শব্দের আগে **-e** যোগ হয় — এই নিয়ম মনে রাখুন।
+- **haben** এর "du hast" এবং "er/sie/es hat" — মাঝের "e" হারিয়ে যায়, এটি অনিয়মিত রূপ হিসেবে আলাদা করে মুখস্থ করুন।
+- **Geschwister** সবসময় বহুবচন (plural) হিসেবে ব্যবহৃত হয়, এক ভাই থাকলেও "Bruder" বলুন, "Geschwister" শুধু ভাই-বোন একসাথে বোঝাতে।
