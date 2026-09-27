@@ -54,7 +54,8 @@ lexora/
 │   ├── levels.json                     # CEFR level definitions (A1–C2)
 │   ├── bn-de/
 │   │   ├── meta.json
-│   │   └── a1/ (stage-01.md … stage-20.md)
+│   │   ├── a1/ (stage-01.md … stage-20.md)
+│   │   └── a2/ (stage-01.md … stage-20.md)
 │   └── bn-pl/
 │       ├── meta.json
 │       └── a1/ (stage-01.md … stage-05.md)
@@ -120,10 +121,14 @@ Files must be named `stage-01.md`, `stage-02.md`, … (zero-padded, sorted alpha
 
 ## Available Language Pairs
 
-| Slug | From | To | A1 Stages |
-|------|------|----|-----------|
-| `bn-de` | Bengali 🇧🇩 | German 🇩🇪 | 20 — a full Goethe-Zertifikat A1 (Start Deutsch 1) exam-aligned curriculum: 1 Alphabet, 2 Greetings & Introductions, 3 Numbers & Personal Details, 4 Countries & Languages, 5 Family, 6 Objects, 7 Food & Drinks, 8 Shopping & Prices, 9 Time & Daily Routine, 10 Free Time & Hobbies, 11 Appointments, 12 City & Directions, 13 Transport & Travel, 14 Home & Apartment, 15 Work & Jobs, 16 Body & Health, 17 Clothes & Weather, 18 Past Events (Perfekt), 19 Past Continued (Präteritum), 20 Writing & Forms |
-| `bn-pl` | Bengali 🇧🇩 | Polish 🇵🇱 | 5 (Greetings, Numbers, Colors, Days, Family) |
+| Slug | From | To | Levels built |
+|------|------|----|--------------|
+| `bn-de` | Bengali 🇧🇩 | German 🇩🇪 | A1 (20 stages) + A2 (20 stages) — see below |
+| `bn-pl` | Bengali 🇧🇩 | Polish 🇵🇱 | A1 (5 stages: Greetings, Numbers, Colors, Days, Family) |
+
+**bn-de A1** (Goethe-Zertifikat A1 / Start Deutsch 1 exam-aligned): 1 Alphabet, 2 Greetings & Introductions, 3 Numbers & Personal Details, 4 Countries & Languages, 5 Family, 6 Objects, 7 Food & Drinks, 8 Shopping & Prices, 9 Time & Daily Routine, 10 Free Time & Hobbies, 11 Appointments, 12 City & Directions, 13 Transport & Travel, 14 Home & Apartment, 15 Work & Jobs, 16 Body & Health, 17 Clothes & Weather, 18 Past Events (Perfekt), 19 Past Continued (Präteritum), 20 Writing & Forms.
+
+**bn-de A2** (Goethe-Zertifikat A2 exam-aligned, builds on A1): 1 Personal History, 2 Family & Relationships, 3 Living & Neighbours, 4 Work & Colleagues, 5 Leisure & Clubs, 6 Shopping & Complaints, 7 Clothes & Style, 8 Health & Doctor, 9 Food & Restaurants, 10 Travel & Holidays, 11 Media & Technology, 12 Education & School, 13 Celebrations, 14 Weather & Nature, 15 Services (Bank/Post/Authorities), 16 Politeness (Konjunktiv II), 17 Plans & Wishes (werden-future), 18 Sport & Fitness, 19 Emails & Letters, 20 Review & Exam Practice.
 
 ## Theme System
 
