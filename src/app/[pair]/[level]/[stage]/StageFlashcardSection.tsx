@@ -9,9 +9,12 @@ import { useUiLang } from '@/components/UiLanguageProvider'
 interface Props {
   cards: Flashcard[]
   langCode: string
+  pair: string
+  level: string
+  stage: number
 }
 
-export default function StageFlashcardSection({ cards, langCode }: Props) {
+export default function StageFlashcardSection({ cards, langCode, pair, level, stage }: Props) {
   const { t } = useUiLang()
   const [mode, setMode] = useState<'flashcards' | 'quiz'>('flashcards')
 
@@ -48,9 +51,9 @@ export default function StageFlashcardSection({ cards, langCode }: Props) {
       )}
 
       {mode === 'flashcards' ? (
-        <FlashcardDeck cards={cards} langCode={langCode} />
+        <FlashcardDeck cards={cards} langCode={langCode} pair={pair} level={level} stage={stage} />
       ) : (
-        <QuizMode cards={cards} langCode={langCode} />
+        <QuizMode cards={cards} langCode={langCode} pair={pair} level={level} stage={stage} />
       )}
     </div>
   )

@@ -3,10 +3,14 @@
 import { useState, useEffect, useCallback } from 'react'
 import type { Flashcard } from '@/lib/flashcards'
 import { useUiLang } from '@/components/UiLanguageProvider'
+import { trackQuizStart, trackQuizAnswer, trackQuizComplete } from '@/lib/analytics'
 
 interface Props {
   cards: Flashcard[]
   langCode: string
+  pair?: string
+  level?: string
+  stage?: number
 }
 
 interface QuizQuestion {
@@ -29,7 +33,7 @@ function buildQuestions(cards: Flashcard[]): QuizQuestion[] {
   })
 }
 
-export default function QuizMode({ cards }: Props) {
+export default function QuizMode({ cards, pair = '', level = '', stage = 0 }: Props) {
   const { t } = useUiLang()
   const [questions, setQuestions] = useState<QuizQuestion[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -38,12 +42,14 @@ export default function QuizMode({ cards }: Props) {
   const [done, setDone] = useState(false)
 
   const initQuiz = useCallback(() => {
-    setQuestions(buildQuestions(cards))
+    const q = buildQuestions(cards)
+    setQuestions(q)
     setCurrentIndex(0)
     setSelected(null)
     setScore(0)
     setDone(false)
-  }, [cards])
+    trackQuizStart(pair, level, stage, cards.length)
+  }, [cards, pair, level, stage])
 
   useEffect(() => {
     initQuiz()
@@ -77,18 +83,19 @@ export default function QuizMode({ cards }: Props) {
   function handleSelect(idx: number) {
     if (selected !== null) return
     setSelected(idx)
-    if (idx === q.correctIndex) {
+    const correct = idx === q.correctIndex
+    trackQuizAnswer(correct)
+    if (correct) {
       setScore(s => s + 1)
-      // Auto advance after 1s on correct
-      setTimeout(() => {
-        advance()
-      }, 1000)
+      setTimeout(() => advance(), 1000)
     }
   }
 
   function advance() {
     setSelected(null)
     if (currentIndex + 1 >= questions.length) {
+      const finalScore = score + (selected === questions[currentIndex]?.correctIndex ? 1 : 0)
+      trackQuizComplete(pair, level, stage, finalScore, questions.length)
       setDone(true)
     } else {
       setCurrentIndex(i => i + 1)

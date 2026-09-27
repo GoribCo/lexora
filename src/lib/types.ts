@@ -41,3 +41,26 @@ export interface PairMeta {
   description: string
   totalStages: Record<string, number>
 }
+
+export interface OpportunityHighlight {
+  icon: string
+  title: string
+  titleBn: string
+  stat: string
+}
+
+export interface Opportunities {
+  // Frontmatter fields
+  title: string
+  titleBn: string
+  speakers: string
+  countries: string[]
+  highlights: OpportunityHighlight[]
+  // Optional extra structured fields — add any new ones here over time
+  visa_types?: string[]
+  salary_range?: string
+  top_cities?: string[]
+  community_size?: string
+  // Free-form Markdown body
+  content: string
+}

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { isStageComplete, markStageComplete, updateStreak } from '@/lib/progress'
+import { trackStageComplete } from '@/lib/analytics'
 
 interface Props {
   pair: string
@@ -20,6 +21,7 @@ export default function MarkComplete({ pair, level, stageNum }: Props) {
   function handleMark() {
     markStageComplete(pair, level, stageNum)
     updateStreak()
+    trackStageComplete(pair, level, stageNum)
     setCompleted(true)
     setJustDone(true)
     setTimeout(() => setJustDone(false), 2000)

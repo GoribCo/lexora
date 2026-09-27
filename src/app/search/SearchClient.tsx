@@ -1,10 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import ThemeToggle from '@/components/ThemeToggle'
 import { useUiLang } from '@/components/UiLanguageProvider'
 import type { SearchResult } from '@/lib/searchIndex'
+import { trackSearch } from '@/lib/analytics'
 
 interface Props {
   index: SearchResult[]
@@ -22,8 +23,24 @@ const levelBadge: Record<string, string> = {
 export default function SearchClient({ index }: Props) {
   const { t } = useUiLang()
   const [query, setQuery] = useState('')
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const q = query.trim().toLowerCase()
+
+  // Track searches with 800ms debounce so we don't fire on every keystroke
+  useEffect(() => {
+    if (!q) return
+    if (debounceRef.current) clearTimeout(debounceRef.current)
+    debounceRef.current = setTimeout(() => {
+      const count = index.filter(r =>
+        r.title.toLowerCase().includes(q) ||
+        r.titleNative.toLowerCase().includes(q) ||
+        r.description.toLowerCase().includes(q)
+      ).length
+      trackSearch(q, count)
+    }, 800)
+    return () => { if (debounceRef.current) clearTimeout(debounceRef.current) }
+  }, [q, index])
   const results: SearchResult[] = q.length === 0 ? [] : index.filter(r =>
     r.title.toLowerCase().includes(q) ||
     r.titleNative.toLowerCase().includes(q) ||

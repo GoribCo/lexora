@@ -31,6 +31,12 @@ const config = {
     keywords: ['language learning', 'German', 'Polish', 'Bengali', 'CEFR', 'A1 B1 C2', 'flashcards', 'vocabulary'],
   },
 
+  // ── Analytics ─────────────────────────────────────────────────────────────
+  // Set NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX in your environment or GitHub Actions secret.
+  analytics: {
+    gaId: process.env.NEXT_PUBLIC_GA_ID ?? '',
+  },
+
   // ── Theme ──────────────────────────────────────────────────────────────────
   theme: {
     colorLight: '#f9fafb',

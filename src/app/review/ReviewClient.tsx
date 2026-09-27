@@ -7,6 +7,7 @@ import SpeakButton from '@/components/SpeakButton'
 import { getLangCode } from '@/lib/languages'
 import { useUiLang } from '@/components/UiLanguageProvider'
 import KeyboardShortcuts from '@/components/KeyboardShortcuts'
+import { trackReviewScore, trackReviewSessionComplete } from '@/lib/analytics'
 
 interface Props {
   pair: string
@@ -49,8 +50,10 @@ export default function ReviewClient({ pair, pairLabel }: Props) {
 
   function handleScore(score: 1 | 2 | 3) {
     updateCard(card.pair, card.level, card.stage, card.front, score)
+    trackReviewScore(pair, score)
     if (currentIndex + 1 >= total) {
       updateStreak()
+      trackReviewSessionComplete(pair, total)
       setDone(true)
     } else {
       setFlipped(false)

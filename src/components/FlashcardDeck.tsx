@@ -4,13 +4,17 @@ import { useState } from 'react'
 import type { Flashcard } from '@/lib/flashcards'
 import SpeakButton from './SpeakButton'
 import KeyboardShortcuts from './KeyboardShortcuts'
+import { trackFlashcardFlip, trackFlashcardComplete } from '@/lib/analytics'
 
 interface Props {
   cards: Flashcard[]
-  langCode: string  // BCP-47 target language code, e.g. 'de-DE'
+  langCode: string
+  pair?: string
+  level?: string
+  stage?: number
 }
 
-export default function FlashcardDeck({ cards, langCode }: Props) {
+export default function FlashcardDeck({ cards, langCode, pair = '', level = '', stage = 0 }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
 
@@ -20,6 +24,9 @@ export default function FlashcardDeck({ cards, langCode }: Props) {
 
   function goNext() {
     setFlipped(false)
+    if (currentIndex + 1 === cards.length) {
+      trackFlashcardComplete(pair, level, stage, cards.length)
+    }
     setTimeout(() => setCurrentIndex(i => Math.min(i + 1, cards.length - 1)), 150)
   }
 
@@ -29,6 +36,7 @@ export default function FlashcardDeck({ cards, langCode }: Props) {
   }
 
   function handleFlip() {
+    if (!flipped) trackFlashcardFlip(pair, level, stage, card.front)
     setFlipped(f => !f)
   }
 
