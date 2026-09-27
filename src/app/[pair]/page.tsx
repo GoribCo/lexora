@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getLanguagePairs, getLevels, getPairMeta } from '@/lib/content'
+import { getLanguagePairs, getLevels, getPairMeta, getStages } from '@/lib/content'
 import PageHeader from '@/components/PageHeader'
 import { getPairMeta as getPairSeoMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
@@ -66,7 +66,9 @@ export default async function PairPage({
 
   const levels = getLevels()
   const meta = getPairMeta(pair)
-  const availableLevels = ['a1']
+  const availableLevels = levels
+    .map(level => level.code)
+    .filter(code => getStages(pair, code).length > 0)
 
   return (
     <div className="px-6 pb-28 lg:pb-10 pt-6 max-w-3xl mx-auto lg:mx-0">
