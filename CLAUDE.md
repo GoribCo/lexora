@@ -54,7 +54,7 @@ lexora/
 │   ├── levels.json                     # CEFR level definitions (A1–C2)
 │   ├── bn-de/
 │   │   ├── meta.json
-│   │   └── a1/ (stage-01.md … stage-05.md)
+│   │   └── a1/ (stage-01.md … stage-20.md)
 │   └── bn-pl/
 │       ├── meta.json
 │       └── a1/ (stage-01.md … stage-05.md)
@@ -122,7 +122,7 @@ Files must be named `stage-01.md`, `stage-02.md`, … (zero-padded, sorted alpha
 
 | Slug | From | To | A1 Stages |
 |------|------|----|-----------|
-| `bn-de` | Bengali 🇧🇩 | German 🇩🇪 | 5 (Greetings, Numbers, Colors, Days, Family) |
+| `bn-de` | Bengali 🇧🇩 | German 🇩🇪 | 20 — a full Goethe-Zertifikat A1 (Start Deutsch 1) exam-aligned curriculum: 1 Alphabet, 2 Greetings & Introductions, 3 Numbers & Personal Details, 4 Countries & Languages, 5 Family, 6 Objects, 7 Food & Drinks, 8 Shopping & Prices, 9 Time & Daily Routine, 10 Free Time & Hobbies, 11 Appointments, 12 City & Directions, 13 Transport & Travel, 14 Home & Apartment, 15 Work & Jobs, 16 Body & Health, 17 Clothes & Weather, 18 Past Events (Perfekt), 19 Past Continued (Präteritum), 20 Writing & Forms |
 | `bn-pl` | Bengali 🇧🇩 | Polish 🇵🇱 | 5 (Greetings, Numbers, Colors, Days, Family) |
 
 ## Theme System

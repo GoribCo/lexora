@@ -1,21 +1,21 @@
 ---
 stage: 2
-title: "Grüßen – Greetings"
-titleBn: "শুভেচ্ছা"
-description: "Learn essential German greetings and farewells used in everyday situations."
-duration: "15 min"
+title: "Begrüßung & Vorstellung – Greetings & Introductions"
+titleBn: "শুভেচ্ছা ও পরিচিতি"
+description: "Learn essential greetings, personal pronouns, and the verbs sein and heißen to introduce yourself."
+duration: "25 min"
 vocabulary: 8
 ---
 
 ## পরিচিতি / Introduction
 
-জার্মান ভাষায় শুভেচ্ছা জানানো শেখা হলো প্রথম এবং সবচেয়ে গুরুত্বপূর্ণ পদক্ষেপ। জার্মানরা শুভেচ্ছায় বেশ আনুষ্ঠানিক — বিশেষত অপরিচিত ব্যক্তির সাথে।
+জার্মান ভাষায় শুভেচ্ছা জানানো এবং নিজের পরিচয় দেওয়া শেখা হলো প্রথম এবং সবচেয়ে গুরুত্বপূর্ণ পদক্ষেপ। জার্মানরা শুভেচ্ছায় বেশ আনুষ্ঠানিক — বিশেষত অপরিচিত ব্যক্তির সাথে। এই পাঠে আপনি শুভেচ্ছা, সর্বনাম (pronouns), এবং দুটি সবচেয়ে গুরুত্বপূর্ণ ক্রিয়া **sein** ও **heißen** শিখবেন।
 
-Learning greetings in German is the first and most important step. Germans tend to be quite formal in greetings — especially with strangers. Using the right greeting at the right time shows cultural awareness and earns respect.
+Learning greetings and introducing yourself is the first and most important step. Germans tend to be quite formal in greetings — especially with strangers. In this lesson, you'll learn greetings, personal pronouns, and the two most important verbs: **sein** (to be) and **heißen** (to be called).
 
 ---
 
-## শব্দভাণ্ডার / Vocabulary
+## শব্দভাণ্ডার / Vocabulary — শুভেচ্ছা (Greetings)
 
 | German | Pronunciation | Bengali | English |
 |--------|--------------|---------|---------|
@@ -30,83 +30,123 @@ Learning greetings in German is the first and most important step. Germans tend 
 
 ---
 
+## ব্যাকরণ নোট / Grammar Note — Pronouns, *sein* and *heißen*
+
+জার্মানে বাক্য বলতে গেলে প্রথমে সর্বনাম (pronoun) জানা দরকার:
+
+To form sentences, you first need to know the personal pronouns:
+
+| Bengali | German | English |
+|---------|--------|---------|
+| আমি | ich | I |
+| তুমি | du | you (informal) |
+| আপনি | Sie | you (formal, always capitalized) |
+| সে (পুরুষ) | er | he |
+| সে (নারী) | sie | she |
+| এটা | es | it |
+| আমরা | wir | we |
+| তোমরা | ihr | you all (informal) |
+| তারা / আপনারা | sie / Sie | they / you all (formal) |
+
+**sein** (হওয়া / to be) এবং **heißen** (নাম হওয়া / to be called) — এই দুটি ক্রিয়া প্রথম থেকেই মুখস্থ করুন:
+
+| Pronoun | sein | heißen |
+|---------|------|--------|
+| ich | bin | heiß**e** |
+| du | bist | heiß**t** |
+| er/sie/es | ist | heiß**t** |
+| wir | sind | heiß**en** |
+| ihr | seid | heiß**t** |
+| sie/Sie | sind | heiß**en** |
+
+---
+
 ## সাধারণ বাক্যাংশ / Common Phrases
 
-### আনুষ্ঠানিক শুভেচ্ছা (Formal Greetings)
+### আনুষ্ঠানিক (Formal)
 
 **Wie geht es Ihnen?** *(VEE gayt es EE-nen)*
-আপনি কেমন আছেন? / How are you? (formal)
+আপনি কেমন আছেন? / How are you?
 
 **Es geht mir gut, danke.** *(es gayt meer goot, DANK-eh)*
 আমি ভালো আছি, ধন্যবাদ। / I am well, thank you.
 
-**Sehr gut, danke. Und Ihnen?** *(zayr goot, DANK-eh. oont EE-nen?)*
-খুব ভালো, ধন্যবাদ। আর আপনি? / Very well, thank you. And you?
+**Wie heißen Sie?** *(vee HY-sen zee?)*
+আপনার নাম কী? / What's your name?
 
-### অনানুষ্ঠানিক শুভেচ্ছা (Informal Greetings)
+**Ich heiße Sudipta. Ich bin aus Bangladesch.**
+আমার নাম সুদীপ্তা। আমি বাংলাদেশ থেকে। / My name is Sudipta. I'm from Bangladesh.
+
+### অনানুষ্ঠানিক (Informal)
 
 **Wie geht's?** *(VEE gayts?)*
-কেমন আছ? / How's it going? (informal)
+কেমন আছ? / How's it going?
 
 **Gut, und dir?** *(goot, oont deer?)*
-ভালো, তুমি কেমন? / Good, and you? (informal)
+ভালো, তুমি কেমন? / Good, and you?
 
-**Na, alles klar?** *(nah, AL-es klar?)*
-সব ঠিকঠাক? / Everything okay? (very casual)
+**Wie heißt du?** *(vee hyste doo?)*
+তোমার নাম কী? / What's your name?
 
 ---
 
 ## অনুশীলন সংলাপ / Practice Dialogues
 
-### সংলাপ ১ — অফিসে (Dialogue 1 — At the office)
+### সংলাপ ১ — অফিসে (Dialogue 1 — At the office, formal)
 
-**Anna:** Guten Morgen, Herr Müller!
-*(শুভ সকাল, মুলার সাহেব!)*
+**Anna:** Guten Morgen! Wie heißen Sie?
+*(শুভ সকাল! আপনার নাম কী?)*
 
-**Herr Müller:** Guten Morgen, Frau Schmidt! Wie geht es Ihnen?
-*(শুভ সকাল, শ্মিট ম্যাডাম! আপনি কেমন আছেন?)*
+**Herr Rahman:** Guten Morgen! Ich heiße Rahman. Wie geht es Ihnen?
+*(শুভ সকাল! আমার নাম রহমান। আপনি কেমন আছেন?)*
 
-**Anna:** Es geht mir gut, danke. Und Ihnen?
-*(আমি ভালো আছি, ধন্যবাদ। আর আপনি?)*
-
-**Herr Müller:** Auch gut, danke. Auf Wiedersehen!
-*(আমিও ভালো, ধন্যবাদ। বিদায়!)*
-
-**Anna:** Auf Wiedersehen!
-*(বিদায়!)*
+**Anna:** Es geht mir gut, danke. Auf Wiedersehen!
+*(আমি ভালো আছি, ধন্যবাদ। বিদায়!)*
 
 ---
 
-### সংলাপ ২ — বন্ধুদের মধ্যে (Dialogue 2 — Between friends)
+### সংলাপ ২ — বন্ধুদের মধ্যে (Dialogue 2 — Between friends, informal)
 
-**Leila:** Hey, Tschüss!
-*(হেই, আলবিদা!)*
+**Leila:** Hallo! Wie heißt du?
+*(হ্যালো! তোমার নাম কী?)*
 
-**Tom:** Tschüss! Bis bald!
-*(আলবিদা! শীঘ্রই দেখা হবে!)*
+**Tom:** Ich heiße Tom. Und du?
+*(আমার নাম টম। তোমার?)*
 
-**Leila:** Ja, bis morgen!
-*(হ্যাঁ, আগামীকাল দেখা হবে!)*
+**Leila:** Ich heiße Leila. Wie geht's?
+*(আমার নাম লেইলা। কেমন আছ?)*
+
+**Tom:** Gut, danke! Tschüss, bis bald!
+*(ভালো, ধন্যবাদ! আলবিদা, শীঘ্রই দেখা হবে!)*
+
+---
+
+## অনুশীলন / Practice
+
+সঠিক রূপ বসান / Fill in the correct form:
+
+1. Ich ___________ (heißen) Nadia.
+2. Wie ___________ (heißen) Sie? — Ich ___________ (heißen) Herr Klein.
+3. Er ___________ (sein) mein Freund. Sie ___________ (sein) meine Kollegin.
+4. Wir ___________ (sein) aus Bangladesch.
 
 ---
 
 ## সাংস্কৃতিক নোট / Cultural Note
 
-> **জার্মান শুভেচ্ছার শিষ্টাচার**
->
 > জার্মানিতে, আনুষ্ঠানিক পরিস্থিতিতে "Guten Tag" সবচেয়ে সাধারণ শুভেচ্ছা। "Hallo" বন্ধু এবং পরিচিতদের জন্য ব্যবহৃত হয়। দক্ষিণ জার্মানিতে (বাভারিয়া), "Servus" এবং "Grüß Gott" সাধারণত ব্যবহৃত হয়।
 >
 > In Germany, "Guten Tag" is the most common greeting in formal situations. "Hallo" is used for friends and acquaintances. In southern Germany (Bavaria), "Servus" and "Grüß Gott" are commonly used instead.
 >
-> হ্যান্ডশেক করা জার্মানিতে প্রথম সাক্ষাতে বা পেশাদার পরিবেশে সাধারণ। ঘনিষ্ঠ বন্ধুরা গালে চুমু দেয় না — তারা সাধারণত আলিঙ্গন করে।
+> **du বনাম Sie:** বাংলার তুমি/আপনি-র মতোই জার্মানেও দুই ধরনের "তুমি" আছে — অনানুষ্ঠানিক **du** এবং আনুষ্ঠানিক **Sie** (সবসময় বড় হাতের অক্ষরে)। সন্দেহ হলে সবসময় **Sie** ব্যবহার করুন।
 >
-> Handshakes are common in Germany upon first meeting or in professional settings. Close friends don't typically kiss cheeks — they usually hug instead.
+> Just like তুমি/আপনি in Bengali, German has informal **du** and formal **Sie** (always capitalized). When in doubt, use **Sie**.
 
 ---
 
 ## মনে রাখার টিপস / Memory Tips
 
 - **Guten Morgen** — *morgen* মানে সকাল। সকালে সূর্য উঠলে বলুন!
-- **Guten Abend** — *Abend* মানে সন্ধ্যা। সন্ধ্যায় অন্ধকার হলে বলুন!
-- **Auf Wiedersehen** — আক্ষরিক অর্থ "আবার দেখা পর্যন্ত"। ইংরেজি "until we see again" এর মতো।
-- **Tschüss** — এটি ইংরেজি "Ciao" এর মতো — বন্ধুত্বপূর্ণ এবং অনানুষ্ঠানিক।
+- **Auf Wiedersehen** — আক্ষরিক অর্থ "আবার দেখা পর্যন্ত"।
+- **sein** এবং **heißen** সব পাঠে বারবার আসবে — এই দুটি টেবিল মুখস্থ করে ফেলুন, এগুলোই জার্মান ব্যাকরণের ভিত্তি।
+- **Tschüss** ইংরেজি "Ciao" এর মতো — বন্ধুত্বপূর্ণ এবং অনানুষ্ঠানিক।

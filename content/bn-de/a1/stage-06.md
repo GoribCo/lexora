@@ -1,135 +1,121 @@
 ---
 stage: 6
-title: "Familie – Family Members"
-titleBn: "পরিবার"
-description: "Learn vocabulary for family members and talk about your family in German."
-duration: "20 min"
-vocabulary: 16
+title: "Gegenstände – Objects Around You"
+titleBn: "আশেপাশের জিনিসপত্র"
+description: "Learn everyday object vocabulary along with the articles der/die/das and plural forms."
+duration: "25 min"
+vocabulary: 14
 ---
 
 ## পরিচিতি / Introduction
 
-পরিবার সম্পর্কে কথা বলা জার্মান সামাজিক জীবনের একটি গুরুত্বপূর্ণ অংশ। নতুন পরিচিতি হলে, মানুষ প্রায়ই পরিবার সম্পর্কে জিজ্ঞাসা করেন। এই পাঠে আপনি পরিবারের সদস্যদের নাম এবং আপনার পরিবার সম্পর্কে কথা বলার উপায় শিখবেন।
+জার্মান ভাষার সবচেয়ে গুরুত্বপূর্ণ এবং কঠিন অংশগুলোর একটি হলো বিশেষ্যের লিঙ্গ (gender) — প্রতিটি বিশেষ্যের আগে **der**, **die**, বা **das** বসে, এবং এটি মুখস্থ করা ছাড়া উপায় নেই। বাংলায় কোনো ব্যাকরণগত লিঙ্গ নেই, তাই এটি নতুন একটি অভ্যাস। এই পাঠে আশেপাশের সাধারণ জিনিসপত্র দিয়ে শুরু করা যাক।
 
-Talking about family is an important part of German social life. When meeting new people, conversations often turn to family. In this lesson, you'll learn family member vocabulary and how to talk about your family.
+One of the most important — and challenging — parts of German is noun gender: every noun takes **der**, **die**, or **das**, and there's no way around memorizing it. Bengali has no grammatical gender, so this is a new habit. Let's start with everyday objects.
 
 ---
 
 ## শব্দভাণ্ডার / Vocabulary
 
-| German | Pronunciation | Bengali | English |
-|--------|--------------|---------|---------|
-| die Familie | fah-MEE-lee-yeh | পরিবার | family |
-| die Mutter | MOO-ter | মা | mother |
-| der Vater | FAH-ter | বাবা | father |
-| die Eltern (pl.) | EL-tern | বাবা-মা | parents |
-| der Sohn | ZOHN | ছেলে | son |
-| die Tochter | TOKH-ter | মেয়ে | daughter |
-| der Bruder | BROO-der | ভাই | brother |
-| die Schwester | SHVES-ter | বোন | sister |
-| die Geschwister (pl.) | geh-SHVIS-ter | ভাই-বোন | siblings |
-| der Großvater | GROHS-fah-ter | দাদা/নানা | grandfather |
-| die Großmutter | GROHS-moo-ter | দাদি/নানি | grandmother |
-| die Großeltern (pl.) | GROHS-el-tern | দাদা-দাদি/নানা-নানি | grandparents |
-| der Onkel | ON-kel | চাচা/মামা/খালু | uncle |
-| die Tante | TAHN-teh | চাচি/মামি/খালা | aunt |
-| der Cousin | koo-ZAN | চাচাতো/মামাতো ভাই | male cousin |
-| die Cousine | koo-ZEE-neh | চাচাতো/মামাতো বোন | female cousin |
+| German | Article | Pronunciation | Bengali | English |
+|--------|---------|--------------|---------|---------|
+| Tisch | der | tish | টেবিল | table |
+| Stuhl | der | shtool | চেয়ার | chair |
+| Fenster | das | FEN-ster | জানালা | window |
+| Tür | die | tuur | দরজা | door |
+| Buch | das | bookh | বই | book |
+| Stift | der | shtift | কলম/পেন্সিল | pen |
+| Tasche | die | TAH-sheh | ব্যাগ | bag |
+| Handy | das | HEN-dee | মোবাইল ফোন | mobile phone |
+| Uhr | die | oor | ঘড়ি | clock/watch |
+| Schlüssel | der | SHLUE-sel | চাবি | key |
+| Lampe | die | LAHM-peh | বাতি | lamp |
+| Bett | das | bet | বিছানা | bed |
+| Fernseher | der | FAIRN-zay-er | টেলিভিশন | television |
+| Computer | der | kom-PYOO-ter | কম্পিউটার | computer |
 
 ---
 
-## ব্যাকরণ নোট / Grammar Note — Articles
+## ব্যাকরণ নোট / Grammar Note — Articles & Plural
 
-জার্মানে প্রতিটি বিশেষ্যের একটি নির্দিষ্ট লিঙ্গ আছে। পরিবারের সদস্যদের ক্ষেত্রে লিঙ্গ সাধারণত স্বাভাবিক:
+জার্মানে তিনটি লিঙ্গ: **der** (পুংলিঙ্গ), **die** (স্ত্রীলিঙ্গ), **das** (নিরপেক্ষ)। অনির্দিষ্ট (indefinite) রূপে:
 
-In German, every noun has a grammatical gender. For family members, gender usually follows natural gender:
+German has three genders: **der** (masculine), **die** (feminine), **das** (neuter). The indefinite article:
 
-- **der** = পুংলিঙ্গ (masculine): der Vater, der Sohn, der Bruder
-- **die** = স্ত্রীলিঙ্গ (feminine): die Mutter, die Tochter, die Schwester
-- **die** (plural): die Eltern, die Geschwister, die Großeltern
+| Definite | Indefinite | Example |
+|----------|------------|---------|
+| der | ein | ein Tisch (একটি টেবিল) |
+| die | eine | eine Tasche (একটি ব্যাগ) |
+| das | ein | ein Buch (একটি বই) |
 
----
+**বহুবচন (Plural):** জার্মানে বহুবচনের কোনো একক নিয়ম নেই — প্রতিটি শব্দের সাথে বহুবচন রূপও শিখতে হয়। তবে বহুবচনে সবসময় article হয় **die**:
 
-## পরিবার সম্পর্কে বলা / Talking About Your Family
+There's no single plural rule — you must learn each noun's plural form. But the article is always **die** in the plural:
 
-### আমার পরিবার (My family)
+| Singular | Plural | English |
+|----------|--------|---------|
+| der Tisch | die Tisch**e** | table(s) |
+| das Buch | die B**ü**ch**er** | book(s) |
+| die Tasche | die Tasche**n** | bag(s) |
+| das Handy | die Handy**s** | phone(s) |
 
-**Ich habe...** = আমার আছে / I have...
-
-- Ich habe **einen Bruder**. — আমার একজন ভাই আছে। / I have a brother.
-- Ich habe **zwei Schwestern**. — আমার দুজন বোন আছে। / I have two sisters.
-- Ich habe **keine Geschwister**. — আমার কোনো ভাই-বোন নেই। / I have no siblings.
-
-**Mein/Meine...** = আমার... / My...
-
-- **Mein** Vater heißt Ahmed. — আমার বাবার নাম আহমেদ। / My father's name is Ahmed.
-- **Meine** Mutter kommt aus Dhaka. — আমার মা ঢাকা থেকে এসেছেন। / My mother is from Dhaka.
-- **Meine** Großeltern leben in Bangladesh. — আমার দাদা-দাদি বাংলাদেশে থাকেন। / My grandparents live in Bangladesh.
+> 💡 **স্মরণ টিপ:** নতুন শব্দ শেখার সময় নীল = der, লাল = die, সবুজ = das রঙে হাইলাইট করুন — এটি ব্রেইনকে article মনে রাখতে সাহায্য করে।
+> **Memory tip:** Color-code new words as you learn them — blue for der, red for die, green for das. This helps your brain retain the article.
 
 ---
 
-## অনুশীলন সংলাপ / Practice Dialogues
+## সাধারণ বাক্যাংশ / Common Phrases
 
-### সংলাপ ১ — পরিচয়ে পরিবারের কথা (Dialogue 1 — Family in introductions)
+**Was ist das?** — এটা কী? / What is that?
+**Das ist ein Tisch.** — এটা একটা টেবিল। / That's a table.
 
-**Hana:** Hast du Geschwister?
-*(তোমার কি ভাই-বোন আছে?)*
+**Wo ist mein Handy?** — আমার মোবাইল কোথায়? / Where's my phone?
+**Es ist auf dem Tisch.** — এটা টেবিলের উপর। / It's on the table.
 
-**Tariq:** Ja, ich habe **einen Bruder** und **eine Schwester**. Und du?
-*(হ্যাঁ, আমার একজন ভাই ও একজন বোন আছে। তোমার?)*
-
-**Hana:** Ich habe **zwei Brüder**, aber keine Schwester.
-*(আমার দুজন ভাই আছে, কিন্তু কোনো বোন নেই।)*
-
-**Tariq:** Sind deine Eltern auch in Deutschland?
-*(তোমার বাবা-মা কি জার্মানিতেও আছেন?)*
-
-**Hana:** Nein, sie leben noch in Bangladesh. Ich vermisse sie sehr.
-*(না, তারা এখনো বাংলাদেশে আছেন। আমি তাদের খুব মিস করি।)*
+**Ich brauche einen Stift.** — আমার একটা কলম দরকার। / I need a pen.
 
 ---
 
-### সংলাপ ২ — ছবি দেখানো (Dialogue 2 — Showing photos)
+## অনুশীলন সংলাপ / Practice Dialogue
 
-**Lena:** Wer ist das?
-*(এটি কে?)*
+### একটা জিনিস খোঁজা (Looking for an object)
 
-**Rafiq:** Das ist **mein Vater**. Und das sind **meine Großeltern**.
-*(এটি **আমার বাবা**। আর এরা **আমার দাদা-দাদি।**)*
+**Sara:** Wo ist mein Buch?
+*(আমার বইটা কোথায়?)*
 
-**Lena:** Und das kleine Kind?
-*(আর এই ছোট শিশুটি?)*
+**Peter:** Es ist auf dem Bett.
+*(এটা বিছানার উপর।)*
 
-**Rafiq:** Das ist **meine Cousine** Nadia. Sie ist **fünf** Jahre alt.
-*(এটি **আমার চাচাতো বোন** নাদিয়া। তার বয়স **পাঁচ** বছর।)*
+**Sara:** Und wo ist meine Tasche?
+*(আর আমার ব্যাগটা কোথায়?)*
+
+**Peter:** Deine Tasche ist neben dem Stuhl.
+*(তোমার ব্যাগ চেয়ারের পাশে।)*
 
 ---
 
-## পরিবার বর্ণনা করুন / Describe Your Family
+## অনুশীলন / Practice
 
-নিচের কাঠামো ব্যবহার করে আপনার পরিবার বর্ণনা করুন:
-Use this framework to describe your family:
+সঠিক আর্টিকেল বসান / Fill in the correct article (der/die/das):
 
-> Meine Familie ist groß/klein.
-> আমার পরিবার বড়/ছোট।
-> My family is big/small.
->
-> Ich habe _____ Brüder und _____ Schwestern.
-> আমার _____ ভাই এবং _____ বোন আছে।
-> I have _____ brothers and _____ sisters.
->
-> Mein Vater heißt _____ und meine Mutter heißt _____.
-> আমার বাবার নাম _____ এবং মায়ের নাম _____.
-> My father's name is _____ and my mother's name is _____.
+1. ___________ Tisch (table)
+2. ___________ Tür (door)
+3. ___________ Buch (book)
+4. ___________ Handy (phone)
+5. বহুবচন করুন / Make plural: das Buch → die ___________
 
 ---
 
 ## সাংস্কৃতিক নোট / Cultural Note
 
-> বাংলাদেশী পরিবারে, পরিবারের বড়দের সম্মান করার একটি শক্তিশালী ঐতিহ্য আছে — আপনি হয়তো চাচা, মামা, খালা শব্দগুলো অপরিচিতদের জন্যও ব্যবহার করেন। জার্মানিতে পরিবার সাধারণত ছোট হয় — মাত্র বাবা, মা এবং এক বা দুটি সন্তান। বড় পরিবারের ধারণা তুলনামূলকভাবে কম সাধারণ।
+> জার্মান শিক্ষার্থীরাও প্রায়ই লিঙ্গ নিয়ে ভুল করে থাকে — এমনকি নেটিভ শিশুরাও ভুল করে শেখে! ভুল হলে দুশ্চিন্তা করবেন না, বেশিরভাগ জার্মান আপনাকে বুঝতে পারবে এবং সংশোধন করে দেবে। প্রতিটি নতুন বিশেষ্য শেখার সময় তার article সহ শিখুন — শুধু শব্দ নয়।
 >
-> In Bangladeshi culture, there's a strong tradition of respecting elders — you might use "uncle" or "aunt" even for non-relatives. In Germany, families tend to be smaller — typically just parents and one or two children. Extended family living together is less common.
->
-> জার্মান ঘরে আমন্ত্রণ পেলে সময়মতো আসুন — জার্মানরা সময়ানুবর্তিতাকে সম্মান মনে করেন।
->
-> If invited to a German home, arrive on time — Germans value punctuality highly.
+> Even native German children make gender mistakes while learning. Don't stress about errors — most Germans will understand and gently correct you. Always learn a new noun together with its article, never the word alone.
+
+---
+
+## মনে রাখার টিপস / Memory Tips
+
+- নতুন শব্দ নোটবুকে তিন কলামে লিখুন: der-শব্দ, die-শব্দ, das-শব্দ — আলাদাভাবে গুছিয়ে রাখলে মনে রাখা সহজ হয়।
+- ছোট জিনিস প্রায়ই **das** (das Handy, das Buch), কিন্তু এটি নিশ্চিত নিয়ম নয় — ব্যতিক্রম অনেক আছে।
+- **-e** দিয়ে শেষ হওয়া শব্দ প্রায়ই **die** হয় (die Tasche, die Lampe, die Uhr) — এটি একটি সহায়ক ইঙ্গিত।

@@ -1,126 +1,143 @@
 ---
 stage: 4
-title: "Farben – Colors"
-titleBn: "রং"
-description: "Learn German color words and use them to describe objects around you."
-duration: "15 min"
-vocabulary: 12
+title: "Länder & Sprachen – Countries & Languages"
+titleBn: "দেশ ও ভাষা"
+description: "Learn country and language names, and ask questions with wer, wo, woher, and wie."
+duration: "25 min"
+vocabulary: 18
 ---
 
 ## পরিচিতি / Introduction
 
-রং বর্ণনা করা জার্মান ভাষার একটি গুরুত্বপূর্ণ অংশ। পোশাক কেনার সময়, দিকনির্দেশ দেওয়ার সময়, বা নতুন জিনিস বর্ণনা করার সময় রঙের নাম জানা অপরিহার্য।
+কোথা থেকে এসেছেন এবং কোন ভাষায় কথা বলেন — এটি প্রথম পরিচয়ের সবচেয়ে সাধারণ প্রশ্ন। এই পাঠে আপনি দেশ ও ভাষার নাম শিখবেন, এবং প্রশ্ন করার জন্য চারটি গুরুত্বপূর্ণ W-শব্দ (Wer, Wo, Woher, Wie) আয়ত্ত করবেন।
 
-Describing colors is an essential part of German. Whether shopping for clothes, giving directions, or describing new things, knowing color names is indispensable.
+Where you're from and what languages you speak are the most common questions in a first introduction. In this lesson, you'll learn country and language names, and master four essential question words: **Wer** (who), **Wo** (where), **Woher** (from where), and **Wie** (how).
 
 ---
 
-## শব্দভাণ্ডার / Vocabulary
+## শব্দভাণ্ডার / Vocabulary — দেশ (Countries)
 
 | German | Pronunciation | Bengali | English |
 |--------|--------------|---------|---------|
-| rot | ROHT | লাল | red |
-| blau | BLOW | নীল | blue |
-| grün | GROON | সবুজ | green |
-| gelb | GELP | হলুদ | yellow |
-| schwarz | SHVARTS | কালো | black |
-| weiß | VICE | সাদা | white |
-| grau | GROW | ধূসর | grey |
-| braun | BROWN | বাদামি | brown |
-| orange | oh-RAHN-zheh | কমলা | orange |
-| rosa | ROH-zah | গোলাপি | pink |
-| lila | LEE-lah | বেগুনি | purple |
-| türkis | TOOR-kees | ফিরোজা | turquoise |
+| Bangladesch | BAN-glah-desh | বাংলাদেশ | Bangladesh |
+| Deutschland | DOYTSH-lant | জার্মানি | Germany |
+| Indien | IN-dee-en | ভারত | India |
+| Pakistan | PAH-kis-tahn | পাকিস্তান | Pakistan |
+| England | ENG-lant | ইংল্যান্ড | England |
+| Frankreich | FRANK-ryekh | ফ্রান্স | France |
+| Österreich | UR-ster-ryekh | অস্ট্রিয়া | Austria |
+| die Schweiz | dee shvyets | সুইজারল্যান্ড | Switzerland |
 
 ---
 
-## ব্যাকরণ নোট / Grammar Note
+## শব্দভাণ্ডার / Vocabulary — ভাষা ও প্রশ্ন (Languages & Question Words)
 
-জার্মানে, বিশেষণ হিসেবে রঙের নাম ব্যবহার করলে সেগুলো বিশেষ্যের লিঙ্গ ও বিভক্তি অনুসারে পরিবর্তিত হয়। তবে বিশেষ্যের পরে ব্যবহার করলে পরিবর্তন হয় না:
-
-In German, colors used as adjectives change form based on the noun's gender and case. But when used after the noun (predicative), they don't change:
-
-- Das Auto ist **rot**. *(গাড়িটি লাল।)* — The car is red.
-- Das **rote** Auto *(লাল গাড়িটি)* — the red car
-
-এখন শুধু মৌলিক রূপ শিখুন (আপাতত)।
-For now, just learn the basic form.
+| German | Pronunciation | Bengali | English |
+|--------|--------------|---------|---------|
+| Deutsch | doytsh | জার্মান | German |
+| Englisch | ENG-lish | ইংরেজি | English |
+| Bengali / Bengalisch | ben-GAH-lish | বাংলা | Bengali |
+| Urdu | OOR-doo | উর্দু | Urdu |
+| Hindi | HIN-dee | হিন্দি | Hindi |
+| Wer? | vair | কে? | Who? |
+| Wo? | voh | কোথায়? | Where? |
+| Woher? | voh-HAIR | কোথা থেকে? | Where from? |
+| Wie? | vee | কীভাবে/কেমন? | How? |
+| die Sprache | dee SHPRAH-kheh | ভাষা | language |
 
 ---
 
-## বাক্যে রঙ / Colors in Sentences
+## ব্যাকরণ নোট / Grammar Note — W-Fragen (Question Words)
 
-**পোশাক বর্ণনায় (Describing clothes):**
+জার্মানে প্রশ্ন করার সময় সাধারণত W-শব্দ দিয়ে শুরু হয়, তারপর ক্রিয়া, তারপর কর্তা:
 
-- Ich trage ein **blaues** Hemd. — আমি একটি নীল শার্ট পরছি। / I'm wearing a blue shirt.
-- Meine Jacke ist **schwarz**. — আমার জ্যাকেটটি কালো। / My jacket is black.
-- Das **rote** Kleid gefällt mir. — লাল পোশাকটি আমার পছন্দ। / I like the red dress.
+German questions typically start with the question word, then the verb, then the subject:
 
-**জিনিস বর্ণনায় (Describing objects):**
+> **Woher** + **kommst** + **du**? — কোথা থেকে + আসো + তুমি? — Where do you come from?
 
-- Das Haus ist **weiß**. — বাড়িটি সাদা। / The house is white.
-- Der Himmel ist **blau**. — আকাশ নীল। / The sky is blue.
-- Das Gras ist **grün**. — ঘাস সবুজ। / The grass is green.
+| Question | Answer |
+|----------|--------|
+| **Wer** ist das? — এটা কে? | Das ist Anna. — এটা আনা। |
+| **Wo** wohnst du? — তুমি কোথায় থাক? | Ich wohne in Dhaka. — আমি ঢাকায় থাকি। |
+| **Woher** kommst du? — তুমি কোথা থেকে এসেছ? | Ich komme aus Bangladesch. |
+| **Wie** heißt du? — তোমার নাম কী? | Ich heiße Karim. |
+
+**kommen aus** (আসা থেকে) সবসময় **aus** এর সাথে ব্যবহৃত হয়:
+**kommen aus** is always used with the preposition **aus**:
+
+- Ich komme **aus** Bangladesch. — আমি বাংলাদেশ থেকে এসেছি।
+- Sie kommt **aus** Deutschland. — সে জার্মানি থেকে এসেছে।
+
+---
+
+## সাধারণ বাক্যাংশ / Common Phrases
+
+**Welche Sprachen sprichst du?** *(VEL-kheh SHPRAH-khen shprikhst doo?)*
+তুমি কোন কোন ভাষায় কথা বল? / What languages do you speak?
+
+**Ich spreche Bengali und ein bisschen Deutsch.**
+আমি বাংলা এবং একটু জার্মান বলি। / I speak Bengali and a little German.
+
+**Ich komme aus Bangladesch, aus Dhaka.**
+আমি বাংলাদেশের ঢাকা থেকে এসেছি। / I come from Bangladesh, from Dhaka.
 
 ---
 
 ## অনুশীলন সংলাপ / Practice Dialogues
 
-### সংলাপ ১ — কেনাকাটায় (Dialogue 1 — Shopping for clothes)
+### সংলাপ ১ — ভাষা বিনিময়ে (Dialogue 1 — At a language exchange)
 
-**Kundin:** Haben Sie diese Bluse auch in **grün**?
-*(এই ব্লাউজটি কি **সবুজ** রঙেও আছে?)*
+**Jonas:** Woher kommst du?
+*(তুমি কোথা থেকে এসেছ?)*
 
-**Verkäuferin:** Ja, wir haben sie in grün, **rot** und **blau**.
-*(হ্যাঁ, আমাদের কাছে সবুজ, **লাল** এবং **নীল** রঙে আছে।)*
+**Arif:** Ich komme aus Bangladesch. Und du?
+*(আমি বাংলাদেশ থেকে এসেছি। তুমি?)*
 
-**Kundin:** Toll! Ich nehme die **grüne**.
-*(দারুণ! আমি **সবুজটি** নেব।)*
+**Jonas:** Ich komme aus Deutschland, aus Berlin. Welche Sprachen sprichst du?
+*(আমি জার্মানির বার্লিন থেকে এসেছি। তুমি কোন ভাষায় কথা বল?)*
 
----
-
-### সংলাপ ২ — হারিয়ে যাওয়া জিনিস খোঁজা (Dialogue 2 — Looking for a lost item)
-
-**Polizist:** Wie sieht Ihr Rucksack aus?
-*(আপনার ব্যাকপ্যাকটি দেখতে কেমন?)*
-
-**Tourist:** Er ist **schwarz** mit einem **roten** Streifen.
-*(এটি **কালো** রঙের এবং একটি **লাল** ডোরা আছে।)*
-
-**Polizist:** Groß oder klein?
-*(বড় না ছোট?)*
-
-**Tourist:** Mittelgroß und aus Nylon.
-*(মাঝারি আকারের এবং নাইলনের তৈরি।)*
+**Arif:** Ich spreche Bengali, Englisch und ein bisschen Deutsch.
+*(আমি বাংলা, ইংরেজি এবং একটু জার্মান বলি।)*
 
 ---
 
-## মিশ্র রং / Mixed Colors
+### সংলাপ ২ — কাউকে চেনা (Dialogue 2 — Getting to know someone)
 
-কিছু রং তৈরি করুন / Create some colors:
+**Lena:** Wer ist das?
+*(এটা কে?)*
 
-| Combination | Result | Bengali |
-|-------------|--------|---------|
-| rot + weiß = | **rosa** | গোলাপি |
-| blau + gelb = | **grün** | সবুজ |
-| rot + blau = | **lila/violett** | বেগুনি |
-| schwarz + weiß = | **grau** | ধূসর |
+**Rafiq:** Das ist meine Freundin Nadia. Sie kommt aus Pakistan.
+*(এটা আমার বন্ধু নাদিয়া। সে পাকিস্তান থেকে এসেছে।)*
+
+**Lena:** Spricht sie Deutsch?
+*(সে কি জার্মান বলে?)*
+
+**Rafiq:** Ja, ein bisschen. Sie spricht auch Urdu und Englisch.
+*(হ্যাঁ, একটু। সে উর্দু এবং ইংরেজিও বলে।)*
 
 ---
 
 ## অনুশীলন / Practice
 
-আপনার আশেপাশের জিনিসগুলো জার্মানে বর্ণনা করুন:
-Describe objects around you in German:
+সঠিক W-শব্দ বসান / Fill in the correct question word:
 
-1. মেঝে কি রঙের? → Der Boden ist _______.
-2. আকাশ কি রঙের? → Der Himmel ist _______.
-3. আপনার শার্ট কি রঙের? → Mein Hemd ist _______.
+1. ___________ kommst du? — Ich komme aus Bangladesch.
+2. ___________ wohnst du? — Ich wohne in München.
+3. ___________ ist das? — Das ist Herr Klein.
+4. ___________ heißt du? — Ich heiße Farida.
 
 ---
 
 ## সাংস্কৃতিক নোট / Cultural Note
 
-> জার্মানিতে, **grün** (সবুজ) পরিবেশ সচেতনতার প্রতীক। "Die Grünen" (সবুজ দল) হলো জার্মানির একটি প্রধান রাজনৈতিক দল। জার্মান ট্রাফিক সিগন্যালে সবুজ মানে যাওয়া, লাল মানে থামা — ঠিক বাংলাদেশের মতোই!
+> জার্মানিতে **Deutsch**, **Österreich** এবং **die Schweiz** — এই তিন দেশে জার্মান ভাষা কথা বলা হয়, কিন্তু উচ্চারণ ও কিছু শব্দ ভিন্ন হতে পারে (যেমন অস্ট্রিয়ায় "Grüß Gott")। খেয়াল রাখুন, দেশের নামের আগে সাধারণত কোনো article লাগে না ("Deutschland", "Bangladesch"), কিন্তু **die Schweiz** ব্যতিক্রম — এর আগে সবসময় "die" বসে।
 >
-> In Germany, **grün** (green) symbolizes environmental awareness. "Die Grünen" (The Greens) is a major political party. German traffic signals use green for go and red for stop — just like in Bangladesh!
+> German is spoken in Germany, Austria, and Switzerland, though pronunciation and some words differ. Most country names take no article ("Deutschland", "Bangladesch"), but **die Schweiz** is an exception — it always takes "die".
+
+---
+
+## মনে রাখার টিপস / Memory Tips
+
+- **Woher** = "wo" (কোথায়) + "her" (থেকে) — "কোথা থেকে" মনে রাখতে দুই অংশ আলাদা করে ভাবুন।
+- ভাষার নাম প্রায়ই দেশের নামের মতোই কিন্তু "-isch" যোগ হয়: Englisch, Bengalisch।
+- **kommen aus** সবসময় জোড়ায় মনে রাখুন — একা "kommen" ব্যবহার করলে অর্থ অস্পষ্ট থাকে।
